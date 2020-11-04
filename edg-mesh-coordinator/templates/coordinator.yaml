@@ -48,13 +48,15 @@ spec:
           imagePullPolicy: {{ .Values.global.imagePullPolicy }}
           livenessProbe:
             httpGet:
-              path: /ping
+              path: /status
+              scheme: HTTPS
               port: {{ .Values.coordinator.EDG_CLIENT_SERVER_PORT }}
             initialDelaySeconds: 10
           readinessProbe:
             failureThreshold: 7
             httpGet:
-              path: /ready
+              path: /status
+              scheme: HTTPS
               port: {{ .Values.coordinator.EDG_CLIENT_SERVER_PORT }}
           ports:
             - containerPort: {{ .Values.coordinator.EDG_CLIENT_SERVER_PORT }}
