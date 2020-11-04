@@ -1,0 +1,16 @@
+apiVersion: v2
+appVersion: v0.1.0
+description: Edgeless Mesh is the service mesh for the age of confidential computing.
+home: https://edgeless.systems
+keywords:
+- service-mesh
+- confidential-computing
+kubeVersion: ">=1.13.0-0"
+name: edg-mesh-coordinator
+sources:
+- https://github.com/edgelesssys/mesh/
+version: 0.1.0
+maintainers:
+  - name: Edgeless Systems
+    email: me@edgeless.systems
+    url: https://edgeless.systems/

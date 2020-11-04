@@ -1,0 +1,118 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: edg-mesh-coordinator
+  namespace: {{ .Values.global.namespace }}
+  labels:
+    app.kubernetes.io/name: coordinator
+    app.kubernetes.io/part-of: edg-mesh
+    app.kubernetes.io/version: {{ .Values.coordinator.coordinatorImageVersion }}
+    {{ .Values.global.coordinatorComponentLabel }}: coordinator
+    {{ .Values.global.coordinatorNamespaceLabel }}: {{ .Values.global.namespace }}
+spec:
+  replicas: {{ .Values.coordinator.coordinatorReplicas }}
+  selector:
+    matchLabels:
+      {{ .Values.global.coordinatorComponentLabel }}: coordinator
+      {{ .Values.global.coordinatorNamespaceLabel }}: {{ .Values.global.namespace }}
+  template:
+    metadata:
+      labels:
+        {{ .Values.global.coordinatorComponentLabel }}: coordinator
+        {{ .Values.global.coordinatorNamespaceLabel }}: {{ .Values.global.namespace }}
+        {{- with .Values.global.podLabels }}{{ toYaml . | trim | nindent 8 }}{{- end }}
+    spec:
+      {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      serviceAccountName: edg-mesh-coordinator
+      containers:
+        - env:
+          - name: EDG_MESH_SERVER_ADDR
+            value: "{{ .Values.coordinator.EDG_MESH_SERVER_HOST }}:{{ .Values.coordinator.EDG_MESH_SERVER_PORT }}"
+          - name: EDG_CLIENT_SERVER_ADDR
+            value: "{{ .Values.coordinator.EDG_CLIENT_SERVER_HOST }}:{{ .Values.coordinator.EDG_CLIENT_SERVER_PORT }}"
+          - name: EDG_COORDINATOR_DNS_NAMES
+            value: "{{ .Values.coordinator.EDG_COORDINATOR_DNS_NAMES }}"
+          - name: EDG_COORDINATOR_SEAL_DIR
+            value: "{{ .Values.coordinator.EDG_COORDINATOR_SEAL_DIR }}"
+          - name: OE_SIMULATION
+            value: "{{ .Values.coordinator.OE_SIMULATION }}"
+          name: coordinator
+          image: {{ .Values.coordinator.coordinatorImage }}:{{ .Values.coordinator.coordinatorImageVersion }}
+          imagePullPolicy: {{ .Values.global.imagePullPolicy }}
+          livenessProbe:
+            httpGet:
+              path: /ping
+              port: {{ .Values.coordinator.EDG_CLIENT_SERVER_PORT }}
+            initialDelaySeconds: 10
+          readinessProbe:
+            failureThreshold: 7
+            httpGet:
+              path: /ready
+              port: {{ .Values.coordinator.EDG_CLIENT_SERVER_PORT }}
+          ports:
+            - containerPort: {{ .Values.coordinator.EDG_CLIENT_SERVER_PORT }}
+              name: http
+            - containerPort: {{ .Values.coordinator.EDG_MESH_SERVER_PORT }}
+              name: grcp
+
+          resources:
+          {{- toYaml .Values.coordinator.resources | nindent 12 }}
+          volumeMounts:
+          - name: coordinator-pv-storage
+            mountPath: /coordinator/data
+      volumes:
+        - name: coordinator-pv-storage
+          persistentVolumeClaim:
+            claimName: coordinator-pv-claim
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: coordinator-pv-claim
+  namespace: {{ .Values.global.namespace }}
+spec:
+  {{- with .Values.coordinator.storageClass }}
+  storageClassName: {{ .Values.coordinator.storageClass }}
+  {{ end }}
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: coordinator-client-api
+  namespace: {{ .Values.global.namespace }}
+spec:
+  type: LoadBalancer
+  selector:
+    {{ .Values.global.coordinatorComponentLabel }}: coordinator
+    {{ .Values.global.coordinatorNamespaceLabel }}: {{ .Values.global.namespace }}
+  ports:
+  - name: http
+    port: {{ .Values.coordinator.EDG_CLIENT_SERVER_PORT }}
+    targetPort: {{ .Values.coordinator.EDG_CLIENT_SERVER_PORT }}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: coordinator-mesh-api
+  namespace: {{ .Values.global.namespace }}
+spec:
+  type: ClusterIP
+  selector:
+    {{ .Values.global.coordinatorComponentLabel }}: coordinator
+    {{ .Values.global.coordinatorNamespaceLabel }}: {{ .Values.global.namespace }}
+  ports:
+  - name: grcp
+    port: {{ .Values.coordinator.EDG_MESH_SERVER_PORT }}
+    targetPort: {{ .Values.coordinator.EDG_MESH_SERVER_PORT }}
