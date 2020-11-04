@@ -34,13 +34,13 @@ TODO
     * If your deploying on a cluster with nodes that support SGX1+FLC (e.g. AKS or minikube + Azure Standard_DC*s)
 
         ```bash
-        helm install  edg-mesh-coordinator ./edg-mesh-coordinator
+        helm install  edg-mesh-coordinator ./edg-mesh-coordinator --set global.pullSecret=regcred
         ```
 
     * Otherwise
 
         ```bash
-        helm install -f ./nosgx.yaml edg-mesh-coordinator ./edg-mesh-coordinator
+        helm install edg-mesh-coordinator ./edg-mesh-coordinator --set global.pullSecret=regcred --set coordinator.resources=null --set coordinator.OE_SIMULATION=1 --set tolerations=null
         ```
 
 ## Configuration
