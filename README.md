@@ -16,6 +16,8 @@ helm repo update
 
 ## Installing the chart
 
+### From the helm repo
+
 * If your deploying on a cluster with nodes that support SGX1+FLC (e.g. AKS or minikube + Azure Standard_DC*s)
 
 ```bash
@@ -26,6 +28,21 @@ helm install  edg-mesh-coordinator edg-mesh/coordinator --create-namespace edg-m
 
 ```bash
 helm install edg-mesh-coordinator edg-mesh/coordinator --create-namespace edg-mesh --set coordinator.resources=null --set coordinator.OE_SIMULATION=1 --set tolerations=null
+```
+
+### From this repsoitory
+
+* If your deploying on a cluster with nodes that support SGX1+FLC (e.g. AKS or minikube + Azure Standard_DC*s)
+
+```bash
+helm install  edg-mesh-coordinator ./coordinator --create-namespace edg-mesh
+```
+
+* Otherwise
+
+```bash
+helm install edg-mesh-coordinator ./coordinator --create-namespace edg-mesh --set coordinator.resources=null --set coordinator.OE_SIMULATION=1 --set tolerations=null
+```
 
 ## Configuration
 
