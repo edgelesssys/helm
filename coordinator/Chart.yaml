@@ -6,7 +6,7 @@ keywords:
 - service-mesh
 - confidential-computing
 kubeVersion: ">=1.13.0-0"
-name: edg-mesh-coordinator
+name: coordinator
 sources:
 - https://github.com/edgelesssys/mesh/
 version: 0.1.0
