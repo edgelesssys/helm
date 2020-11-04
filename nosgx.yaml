@@ -21,9 +21,7 @@ global:
 
   # For Private docker registries, authentication is needed.
   #  Registry secrets are applied to the respective service accounts
-  imagePullSecrets:
-    - name: regcred
-  # - name: my-private-docker-registry-login-secret
+  pullSecret: regcred
 
 
 
