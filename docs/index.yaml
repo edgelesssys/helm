@@ -3,9 +3,9 @@ entries:
   coordinator:
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2020-11-05T19:33:19.89196988+01:00"
+    created: "2020-11-05T20:30:54.791977962+01:00"
     description: Edgeless Mesh is the service mesh for the age of confidential computing.
-    digest: 78d25de49b059ef7cf3b2b2dcb585e4cd0e3abde7f151472dc95c83ba5c6443d
+    digest: e288cd65bfc2835050452c5b82f25d4f76ba017ce3014254e84757d6fa7d3bee
     home: https://edgeless.systems
     keywords:
     - service-mesh
@@ -21,4 +21,4 @@ entries:
     urls:
     - https://helm.edgeless.systems/coordinator-0.1.0.tgz
     version: 0.1.0
-generated: "2020-11-05T19:33:19.891502796+01:00"
+generated: "2020-11-05T20:30:54.791110844+01:00"
