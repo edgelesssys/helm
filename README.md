@@ -49,7 +49,7 @@ helm repo update
 ```bash
 helm package coordinator
 mv coordinator-x.x.x.tgz docs
-helm repo index docs --url https://helm.edgless.systems
+helm repo index docs --url https://helm.edgeless.systems
 ```
 
 
