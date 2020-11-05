@@ -10,7 +10,7 @@ For more comprehensive documentation, start with the [docs](TODO).
 ## Adding Edgeless Mesh's Helm repository
 
 ```bash
-helm repo add edg-mesh https://helm.edgeless.systems/stable
+helm repo add edg-mesh https://helm.edgeless.systems
 helm repo update
 ```
 
