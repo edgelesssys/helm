@@ -1,22 +1,32 @@
-# Edgeless Mesh Helm Chart
+# Edgeless Systems' helm charts
 
-Edgeless Mesh is the service mesh for the age of confidential computing.
-
-## Quickstart and documentation
-
-See the [Getting Started Guide](TODO) to set up a distributed confidential-computing app in a few simple steps. 
-For more comprehensive documentation, start with the [docs](TODO).
-
-## Adding Edgeless Mesh's Helm repository
+## Adding the helm repository
 
 ```bash
 helm repo add edg-mesh https://helm.edgeless.systems
 helm repo update
 ```
 
-## Installing the chart
+## Update the helm repository
 
-### From the helm repo
+```bash
+helm package coordinator
+mv coordinator-x.x.x.tgz docs
+helm repo index docs --url https://helm.edgeless.systems
+```
+
+## Edgeless Mesh Chart
+
+Edgeless Mesh is the service mesh for the age of confidential computing.
+
+### Quickstart and documentation
+
+See the [Getting Started Guide](TODO) to set up a distributed confidential-computing app in a few simple steps. 
+For more comprehensive documentation, start with the [docs](TODO).
+
+### Installing the chart
+
+#### From the helm repo
 
 * If your deploying on a cluster with nodes that support SGX1+FLC (e.g. AKS or minikube + Azure Standard_DC*s)
 
@@ -30,7 +40,7 @@ helm repo update
     helm install edg-mesh-coordinator edg-mesh/coordinator --create-namespace edg-mesh --set coordinator.resources=null --set coordinator.OE_SIMULATION=1 --set tolerations=null
     ```
 
-### From this repsoitory
+#### From this repsoitory
 
 * If your deploying on a cluster with nodes that support SGX1+FLC (e.g. AKS or minikube + Azure Standard_DC*s)
 
@@ -44,16 +54,9 @@ helm repo update
     helm install edg-mesh-coordinator ./coordinator --create-namespace edg-mesh --set coordinator.resources=null --set coordinator.OE_SIMULATION=1 --set tolerations=null
     ```
 
-## Update the chart repository
-
-```bash
-helm package coordinator
-mv coordinator-x.x.x.tgz docs
-helm repo index docs --url https://helm.edgeless.systems
-```
 
 
-## Configuration
+### Configuration
 
 The following table lists the configurable parameters of the Linkerd2 chart and
 their default values.
@@ -78,3 +81,7 @@ their default values.
 | `global.namespace`                          | Control plane namespace                                                                                                                                                               | `edg-mesh`                            |
 | `nodeSelector`                        | NodeSelector section, See the [K8S documentation](https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#nodeselector) for more information                                   | `beta.kubernetes.io/os: linux`                                 |
 | `tolerations`                        | Tolerations section, See the [K8S documentation](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/) for more information                                   | `{}`                                 |
+
+
+
+
