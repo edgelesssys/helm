@@ -37,11 +37,11 @@ spec:
             value: "{{ .Values.coordinator.meshServerHost }}:{{ .Values.coordinator.meshServerPort }}"
           - name: EDG_COORDINATOR_CLIENT_ADDR
             value: "{{ .Values.coordinator.clientServerHost }}:{{ .Values.coordinator.clientServerPort }}"
-          - name: dnsNames
+          - name: EDG_COORDINATOR_DNS_NAMES
             value: "{{ .Values.coordinator.dnsNames }}"
-          - name: sealDir
+          - name: EDG_COORDINATOR_SEAL_DIR
             value: "{{ .Values.coordinator.sealDir }}"
-          - name: simulation
+          - name: OE_SIMULATION
             value: "{{ .Values.coordinator.simulation }}"
           name: coordinator
           image: {{ .Values.coordinator.coordinatorImage }}:{{ .Values.coordinator.coordinatorImageVersion }}
