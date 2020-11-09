@@ -3,22 +3,22 @@ entries:
   coordinator:
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2020-11-05T20:30:54.791977962+01:00"
+    created: "2020-11-09T15:31:12.560930882+01:00"
     description: Edgeless Mesh is the service mesh for the age of confidential computing.
-    digest: e288cd65bfc2835050452c5b82f25d4f76ba017ce3014254e84757d6fa7d3bee
+    digest: 1d18147af6c7147af651b5791b4fa61534ea8129d4160efa970a0be0386e68a4
     home: https://edgeless.systems
     keywords:
     - service-mesh
     - confidential-computing
     kubeVersion: '>=1.13.0-0'
     maintainers:
-    - email: me@edgeless.systems
+    - email: contact@edgeless.systems
       name: Edgeless Systems
       url: https://edgeless.systems/
     name: coordinator
     sources:
     - https://github.com/edgelesssys/mesh/
     urls:
-    - https://helm.edgeless.systems/coordinator-0.1.0.tgz
+    - https://helm.edgeless.systems/stable/coordinator-0.1.0.tgz
     version: 0.1.0
-generated: "2020-11-05T20:30:54.791110844+01:00"
+generated: "2020-11-09T15:31:12.559168642+01:00"

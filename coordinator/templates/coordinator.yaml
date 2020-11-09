@@ -34,15 +34,15 @@ spec:
       containers:
         - env:
           - name: EDG_COORDINATOR_MESH_ADDR
-            value: "{{ .Values.coordinator.EDG_COORDINATOR_MESH_HOST }}:{{ .Values.coordinator.EDG_COORDINATOR_MESH_PORT }}"
+            value: "{{ .Values.coordinator.meshServerHost }}:{{ .Values.coordinator.meshServerPort }}"
           - name: EDG_COORDINATOR_CLIENT_ADDR
-            value: "{{ .Values.coordinator.EDG_COORDINATOR_CLIENT_HOST }}:{{ .Values.coordinator.EDG_COORDINATOR_CLIENT_PORT }}"
-          - name: EDG_COORDINATOR_DNS_NAMES
-            value: "{{ .Values.coordinator.EDG_COORDINATOR_DNS_NAMES }}"
-          - name: EDG_COORDINATOR_SEAL_DIR
-            value: "{{ .Values.coordinator.EDG_COORDINATOR_SEAL_DIR }}"
-          - name: OE_SIMULATION
-            value: "{{ .Values.coordinator.OE_SIMULATION }}"
+            value: "{{ .Values.coordinator.clientServerHost }}:{{ .Values.coordinator.clientServerPort }}"
+          - name: dnsNames
+            value: "{{ .Values.coordinator.dnsNames }}"
+          - name: sealDir
+            value: "{{ .Values.coordinator.sealDir }}"
+          - name: simulation
+            value: "{{ .Values.coordinator.simulation }}"
           name: coordinator
           image: {{ .Values.coordinator.coordinatorImage }}:{{ .Values.coordinator.coordinatorImageVersion }}
           imagePullPolicy: {{ .Values.global.imagePullPolicy }}
@@ -50,18 +50,18 @@ spec:
             httpGet:
               path: /status
               scheme: HTTPS
-              port: {{ .Values.coordinator.EDG_COORDINATOR_CLIENT_PORT }}
+              port: {{ .Values.coordinator.clientServerPort }}
             initialDelaySeconds: 10
           readinessProbe:
             failureThreshold: 7
             httpGet:
               path: /status
               scheme: HTTPS
-              port: {{ .Values.coordinator.EDG_COORDINATOR_CLIENT_PORT }}
+              port: {{ .Values.coordinator.clientServerPort }}
           ports:
-            - containerPort: {{ .Values.coordinator.EDG_COORDINATOR_CLIENT_PORT }}
+            - containerPort: {{ .Values.coordinator.clientServerPort }}
               name: http
-            - containerPort: {{ .Values.coordinator.EDG_COORDINATOR_MESH_PORT }}
+            - containerPort: {{ .Values.coordinator.meshServerPort }}
               name: grcp
 
           resources:
@@ -101,8 +101,8 @@ spec:
     {{ .Values.global.coordinatorNamespaceLabel }}: {{ .Values.global.namespace }}
   ports:
   - name: http
-    port: {{ .Values.coordinator.EDG_COORDINATOR_CLIENT_PORT }}
-    targetPort: {{ .Values.coordinator.EDG_COORDINATOR_CLIENT_PORT }}
+    port: {{ .Values.coordinator.clientServerPort }}
+    targetPort: {{ .Values.coordinator.clientServerPort }}
 ---
 apiVersion: v1
 kind: Service
@@ -116,5 +116,5 @@ spec:
     {{ .Values.global.coordinatorNamespaceLabel }}: {{ .Values.global.namespace }}
   ports:
   - name: grcp
-    port: {{ .Values.coordinator.EDG_COORDINATOR_MESH_PORT }}
-    targetPort: {{ .Values.coordinator.EDG_COORDINATOR_MESH_PORT }}
+    port: {{ .Values.coordinator.meshServerPort }}
+    targetPort: {{ .Values.coordinator.meshServerPort }}

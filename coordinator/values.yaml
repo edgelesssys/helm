@@ -34,18 +34,17 @@ coordinator:
   coordinatorReplicas: 1
 
   # Environment configuration for the coordinator control-plane
-  # EDG_COORDINATOR_MESH needs to be configured to the same port in the data-plane 
-  EDG_COORDINATOR_MESH_HOST: "0.0.0.0"
-  EDG_COORDINATOR_MESH_PORT: 25554
+  meshServerHost: "0.0.0.0"
+  meshServerPort: 25554
   # EDG_COORDINATOR_CLIENT needs to be configured to the same port your client tool stack 
-  EDG_COORDINATOR_CLIENT_HOST: "0.0.0.0"
-  EDG_COORDINATOR_CLIENT_PORT: 25555
+  clientServerHost: "0.0.0.0"
+  clientServerPort: 25555
   # DNS_NAMES need need to be set according to service names
-  EDG_COORDINATOR_DNS_NAMES: "coordinator-mesh-api,coordinator-client-api,coordinator-mesh-api.emojivoto,coordinator-client-api.emojivoto,coordinator-mesh-api.emojivoto.svc.cluster.local,coordinator-client-api.emojivoto.svc.cluster.local"
+  dnsNames: "coordinator-mesh-api,coordinator-client-api,coordinator-mesh-api.edg-mesh,coordinator-client-api.edg-mesh,coordinator-mesh-api.edg-mesh.svc.cluster.local,coordinator-client-api.edg-mesh.svc.cluster.local"
   # SEAL_DIR needs to be set according to persistent storage
-  EDG_COORDINATOR_SEAL_DIR: "/coordinator/data/"
+  sealDir: "/coordinator/data/"
   # OE_SIMULATION needs be set to "1" when running on systems without SGX1+FLC capabilities
-  OE_SIMULATION: "0"
+  simulation: "0"
 
   resources:
     limits:
