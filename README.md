@@ -17,13 +17,13 @@ helm repo update
 * If your deploying on a cluster with nodes that support SGX1+FLC (e.g. AKS or minikube + Azure Standard_DC*s)
 
     ```bash
-    helm install  edg-mesh-coordinator edgeless/coordinator --create-namespace edg-mesh
+    helm install  edg-mesh-coordinator edgeless/coordinator --create-namespace  --namespace edg-mesh
     ```
 
 * Otherwise
 
     ```bash
-    helm install edg-mesh-coordinator edgeless/coordinator --create-namespace edg-mesh --set coordinator.resources=null --set coordinator.simulation=1 --set tolerations=null
+    helm install edg-mesh-coordinator edgeless/coordinator --create-namespace --namespace edg-mesh --set coordinator.resources=null --set coordinator.simulation=1 --set tolerations=null
     ```
 
 ## Configuration
