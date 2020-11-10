@@ -1,3 +1,5 @@
+{{ if eq (len (lookup "apps/v1" "DaemonSet" "kube-system" "sgx-device-plugin")) 0  }}
+
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:
@@ -44,3 +46,5 @@ spec:
       - name: dev-sgx
         hostPath:
           path: /dev/sgx
+
+{{ end }}
