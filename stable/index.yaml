@@ -1,11 +1,11 @@
 apiVersion: v1
 entries:
-  coordinator:
+  marblerun-coordinator:
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2020-11-10T14:09:46.457979417+01:00"
-    description: Edgeless Mesh is the service mesh for the age of confidential computing.
-    digest: 7d5d396bbfb8d6d02b9bf7ca386d9ccd6f39a595a88752888c1b5a3d671a2067
+    created: "2020-11-10T16:51:17.537585908+01:00"
+    description: Marblerun is the service mesh for the age of confidential computing.
+    digest: 933245bcfdb6718a99cf291e7c346fe77968705d921fcf3aedb0b1eed791a51a
     home: https://edgeless.systems
     keywords:
     - service-mesh
@@ -15,10 +15,10 @@ entries:
     - email: contact@edgeless.systems
       name: Edgeless Systems
       url: https://edgeless.systems/
-    name: coordinator
+    name: marblerun-coordinator
     sources:
-    - https://github.com/edgelesssys/mesh/
+    - https://github.com/edgelesssys/marblerun
     urls:
-    - https://helm.edgeless.systems/stable/coordinator-0.1.0.tgz
+    - https://helm.edgeless.systems/stable/marblerun-coordinator-0.1.0.tgz
     version: 0.1.0
-generated: "2020-11-10T14:09:46.457257501+01:00"
+generated: "2020-11-10T16:51:17.537084997+01:00"

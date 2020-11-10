@@ -17,18 +17,18 @@ helm repo update
 * If your deploying on a cluster with nodes that support SGX1+FLC (e.g. AKS or minikube + Azure Standard_DC*s)
 
     ```bash
-    helm install  edg-mesh-coordinator edgeless/coordinator --create-namespace  --namespace edg-mesh
+    helm install  marblerun-coordinator edgeless/coordinator --create-namespace  --namespace marblerun
     ```
 
 * Otherwise
 
     ```bash
-    helm install edg-mesh-coordinator edgeless/coordinator --create-namespace --namespace edg-mesh --set coordinator.resources=null --set coordinator.simulation=1 --set tolerations=null
+    helm install marblerun-coordinator edgeless/marblerun-coordinator --create-namespace --namespace marblerun --set coordinator.resources=null --set coordinator.simulation=1 --set tolerations=null
     ```
 
 ## Configuration
 
-The following table lists the configurable parameters of the coordinator chart and
+The following table lists the configurable parameters of the marblerun-coordinator chart and
 their default values.
 
 | Parameter                                    | Description    | Default                              |
@@ -48,14 +48,13 @@ their default values.
 | `global.podLabels`                           | Additional labels to add to all pods | `{}` |
 | `global.podAnnotations`                      | Additional annotations to add to all pods | `{}`|
 | `global.imagePullPolicy`                     | Docker image pull policy | `IfNotPresent` |
-| `global.namespace`                           | Control plane namespace | `edg-mesh` |
 | `nodeSelector`                               | NodeSelector section, See the [K8S documentation](https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#nodeselector) for more information | `beta.kubernetes.io/os: linux` |
 | `tolerations`                                | Tolerations section, See the [K8S documentation](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/) for more information | `{}` |
 
 ## Add new version (maintainers)
 
 ```bash
-helm package coordinator
-mv coordinator-x.x.x.tgz stable
+helm package marblerun-coordinator
+mv marblerun-coordinator-x.x.x.tgz stable
 helm repo index stable --url https://helm.edgeless.systems/stable
 ```
