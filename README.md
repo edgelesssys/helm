@@ -39,7 +39,7 @@ their default values.
 | `coordinator.meshServerPort`                 | Port of the mesh-api server configuration | `25554` |
 | `coordinator.clientServerHost`               | Hostname of the client-api server | `0.0.0.0` |
 | `coordinator.clientServerPort`               | Port of the client-api server configuration | `25555` |
-| `coordinator.dnsNames`                       | DNS-Names for the coordinator certificate | `coordinator-mesh-api,coordinator-client-api,coordinator-mesh-api.edg-mesh,coordinator-client-api.edg-mesh,coordinator-mesh-api.edg-mesh.svc.cluster.local,coordinator-client-api.edg-mesh.svc.cluster.local` |
+| `coordinator.hostname`                       | DNS-Names for the coordinator certificate | `localhost` |
 | `coordinator.sealDir`                        | Path to the directory used for sealing data. Needs to be consistent with the persisten storage setup | `/coordinator/data/` |
 | `coordinator.simulation`                     | SGX simulation settings, set to 1 if your not running on an SGX capable cluster | `0` |
 | `global.coordinatorComponentLabel`           | Control plane label. Do not edit | `edgeless.systems/control-plane-component` |

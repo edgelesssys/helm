@@ -34,13 +34,14 @@ coordinator:
   coordinatorReplicas: 1
 
   # Environment configuration for the coordinator control-plane
+  # meshServerPort needs to be configured to the same port as in the data-plane marbles
   meshServerHost: "0.0.0.0"
   meshServerPort: 25554
-  # EDG_COORDINATOR_CLIENT needs to be configured to the same port your client tool stack 
+  # clientServerPort needs to be configured to the same port as in your client tool stack 
   clientServerHost: "0.0.0.0"
   clientServerPort: 25555
-  # DNS_NAMES need need to be set according to service names
-  dnsNames: "coordinator-mesh-api,coordinator-client-api,coordinator-mesh-api.edg-mesh,coordinator-client-api.edg-mesh,coordinator-mesh-api.edg-mesh.svc.cluster.local,coordinator-client-api.edg-mesh.svc.cluster.local"
+  # hosName needs to match the host you expect the coordinator to run on
+  hostname: "localhost"
   # SEAL_DIR needs to be set according to persistent storage
   sealDir: "/coordinator/data/"
   # OE_SIMULATION needs be set to "1" when running on systems without SGX1+FLC capabilities
