@@ -17,7 +17,7 @@ helm repo update
 * If your deploying on a cluster with nodes that support SGX1+FLC (e.g. AKS or minikube + Azure Standard_DC*s)
 
     ```bash
-    helm install  marblerun-coordinator edgeless/coordinator --create-namespace  --namespace marblerun
+    helm install  marblerun-coordinator edgeless/marblerun-coordinator --create-namespace  --namespace marblerun
     ```
 
 * Otherwise
