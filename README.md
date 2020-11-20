@@ -2,8 +2,8 @@
 
 ## Documentation
 
-See the [Getting Started Guide](TODO) to set up a distributed confidential-computing app in a few simple steps. 
-For more comprehensive documentation, start with the [docs](TODO).
+See the [Getting Started Guide](https://marblerun.sh/docs/getting-started/quickstart/) to set up a distributed confidential-computing app in a few simple steps. 
+For more comprehensive documentation, start with the [docs](https://marblerun.sh/docs/introduction/).
 
 ## Add Repository (stable)
 
