@@ -28,14 +28,14 @@ global:
 # coordinator configuration
 coordinator:
   coordinatorImage: ghcr.io/edgelesssys/coordinator
-  coordinatorImageVersion: v0.1.0
+  coordinatorImageVersion: v0.1.1
   coordinatorReplicas: 1
 
   # Environment configuration for the coordinator control-plane
   # meshServerPort needs to be configured to the same port as in the data-plane marbles
   meshServerHost: "0.0.0.0"
   meshServerPort: 25554
-  # clientServerPort needs to be configured to the same port as in your client tool stack 
+  # clientServerPort needs to be configured to the same port as in your client tool stack
   clientServerHost: "0.0.0.0"
   clientServerPort: 25555
   # hosName needs to match the host you expect the coordinator to run on
@@ -50,7 +50,7 @@ coordinator:
       # Disable this if your running on a cluster with an SGX Device Plugin
       kubernetes.azure.com/sgx_epc_mem_in_MiB: 10
 
-  # Set the storage class for your cluster  
+  # Set the storage class for your cluster
   # storageClass:
 
 
