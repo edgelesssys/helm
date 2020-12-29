@@ -28,7 +28,7 @@ global:
 # coordinator configuration
 coordinator:
   coordinatorImage: ghcr.io/edgelesssys/coordinator
-  coordinatorImageVersion: v0.1.1
+  coordinatorImageVersion: v0.2.0
   coordinatorReplicas: 1
 
   # Environment configuration for the coordinator control-plane

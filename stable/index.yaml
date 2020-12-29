@@ -2,10 +2,10 @@ apiVersion: v1
 entries:
   marblerun-coordinator:
   - apiVersion: v2
-    appVersion: v0.1.1
-    created: "2020-12-16T17:03:26.977657745+01:00"
+    appVersion: v0.2.0
+    created: "2020-12-29T12:50:11.929871771+01:00"
     description: Marblerun is the service mesh for the age of confidential computing.
-    digest: f20fc2840f2109b6031297ebbeaabbf559fe89a1405a4eec72bc6af3a4e1f17a
+    digest: c7112e3d950d5d17a17657cb77aec7242d2e05a5979bb59a24b120ff6a9319dd
     home: https://edgeless.systems
     keywords:
     - service-mesh
@@ -19,11 +19,11 @@ entries:
     sources:
     - https://github.com/edgelesssys/marblerun
     urls:
-    - https://helm.edgeless.systems/stable/marblerun-coordinator-0.1.1.tgz
-    version: 0.1.1
+    - https://helm.edgeless.systems/stable/marblerun-coordinator-0.2.0.tgz
+    version: 0.2.0
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2020-12-16T17:03:26.977346902+01:00"
+    created: "2020-12-29T12:50:11.929266632+01:00"
     description: Marblerun is the service mesh for the age of confidential computing.
     digest: 933245bcfdb6718a99cf291e7c346fe77968705d921fcf3aedb0b1eed791a51a
     home: https://edgeless.systems
@@ -41,4 +41,4 @@ entries:
     urls:
     - https://helm.edgeless.systems/stable/marblerun-coordinator-0.1.0.tgz
     version: 0.1.0
-generated: "2020-12-16T17:03:26.976434877+01:00"
+generated: "2020-12-29T12:50:11.92842892+01:00"
