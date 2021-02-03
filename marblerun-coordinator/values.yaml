@@ -24,6 +24,12 @@ global:
 
 
 
+# sgx-device-plugin start flag
+sgxDevice:
+  # Set to "false" to disable starting of sgx-device-plugin pod
+  start: true
+
+
 
 # coordinator configuration
 coordinator:
