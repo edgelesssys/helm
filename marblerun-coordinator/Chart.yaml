@@ -9,7 +9,7 @@ kubeVersion: ">=1.13.0-0"
 name: marblerun-coordinator
 sources:
 - https://github.com/edgelesssys/marblerun
-version: 0.2.0
+version: 0.2.1
 maintainers:
   - name: Edgeless Systems
     email: contact@edgeless.systems
