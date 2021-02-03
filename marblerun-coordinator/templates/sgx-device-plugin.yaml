@@ -1,4 +1,4 @@
-{{ if eq (len (lookup "apps/v1" "DaemonSet" "kube-system" "sgx-device-plugin")) 0  }}
+{{ if and .Values.sgxDevice.start (eq (len (lookup "apps/v1" "DaemonSet" "kube-system" "sgx-device-plugin")) 0)  }}
 
 apiVersion: apps/v1
 kind: DaemonSet
