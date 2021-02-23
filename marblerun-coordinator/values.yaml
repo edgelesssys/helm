@@ -36,7 +36,7 @@ webhook:
   webhookImage: ghcr.io/edgelesssys/webhook
   webhookImageVersion: v0.1.0
   webhookReplicas: 1
-  CABundle: {}
+  CABundle: "CA_Bundle_Base64"
 
 
 # coordinator configuration
