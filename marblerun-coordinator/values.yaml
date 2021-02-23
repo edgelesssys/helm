@@ -30,6 +30,14 @@ sgxDevice:
   start: true
 
 
+# webhook configuration
+webhook:
+  start: false
+  webhookImage: ghcr.io/edgelesssys/webhook
+  webhookImageVersion: v0.1.0
+  webhookReplicas: 1
+  CABundle: {}
+
 
 # coordinator configuration
 coordinator:
