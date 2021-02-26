@@ -5,7 +5,10 @@
 
 # Values that are passed along to sub-charts
 global:
-  imagePullPolicy:  IfNotPresent
+  image:
+    pullPolicy: IfNotPresent
+    version: v0.2.0
+    repository: ghcr.io/edgelesssys
 
   # Additional annotations to add to all pods
   podAnnotations: {}
@@ -30,11 +33,15 @@ sgxDevice:
   start: true
 
 
+# webhook configuration
+marbleInjector:
+  start: false
+  marbleInjectorReplicas: 1
+  CABundle: "CA_Bundle_Base64"
+
 
 # coordinator configuration
 coordinator:
-  coordinatorImage: ghcr.io/edgelesssys/coordinator
-  coordinatorImageVersion: v0.2.0
   coordinatorReplicas: 1
 
   # Environment configuration for the coordinator control-plane

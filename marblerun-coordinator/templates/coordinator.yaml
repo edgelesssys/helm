@@ -6,7 +6,7 @@ metadata:
   labels:
     app.kubernetes.io/name: coordinator
     app.kubernetes.io/part-of: marblerun
-    app.kubernetes.io/version: {{ .Values.coordinator.coordinatorImageVersion }}
+    app.kubernetes.io/version: {{ .Values.global.image.version }}
     {{ .Values.global.coordinatorComponentLabel }}: coordinator
     {{ .Values.global.coordinatorNamespaceLabel }}: {{ .Release.Namespace }}
 spec:
@@ -44,8 +44,8 @@ spec:
           - name: OE_SIMULATION
             value: "{{ .Values.coordinator.simulation }}"
           name: coordinator
-          image: {{ .Values.coordinator.coordinatorImage }}:{{ .Values.coordinator.coordinatorImageVersion }}
-          imagePullPolicy: {{ .Values.global.imagePullPolicy }}
+          image: "{{ .Values.global.image.repository }}/coordinator:{{ .Values.global.image.version }}"
+          imagePullPolicy: {{ .Values.global.image.pullPolicy }}
           livenessProbe:
             httpGet:
               path: /status
