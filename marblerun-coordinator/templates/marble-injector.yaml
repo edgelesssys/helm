@@ -84,8 +84,8 @@ webhooks:
       scope: "Namespaced"
     namespaceSelector:
       matchLabels:
-        marblerun/monitor: marblerun
-        marblerun/injectsgx: enabled
+        marblerun/inject: enabled
+        marblerun/inject-sgx: enabled
     admissionReviewVersions: ["v1", "v1beta1"]
     sideEffects: None
   - name: marble-injector-no-sgx.cluster.local
@@ -103,7 +103,7 @@ webhooks:
       scope: "Namespaced"
     namespaceSelector:
       matchLabels:
-        marblerun/monitor: marblerun
+        marblerun/inject: marblerun
     admissionReviewVersions: ["v1", "v1beta1"]
     sideEffects: None
 {{ end }}
