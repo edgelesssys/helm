@@ -103,7 +103,7 @@ webhooks:
       scope: "Namespaced"
     namespaceSelector:
       matchLabels:
-        marblerun/inject: marblerun
+        marblerun/inject: enabled
     admissionReviewVersions: ["v1", "v1beta1"]
     sideEffects: None
 {{ end }}
