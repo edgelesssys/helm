@@ -71,6 +71,9 @@ metadata:
 webhooks:
   - name: marble-injector.cluster.local
     clientConfig:
+      {{- with .Values.marbleInjector.CABundle }}
+      caBundle: {{ . }}
+      {{- end }}
       service:
         name: marble-injector
         namespace: marblerun
@@ -90,6 +93,9 @@ webhooks:
     sideEffects: None
   - name: marble-injector-no-sgx.cluster.local
     clientConfig:
+      {{- with .Values.marbleInjector.CABundle }}
+      caBundle: {{ . }}
+      {{- end }}
       service:
         name: marble-injector
         namespace: marblerun
