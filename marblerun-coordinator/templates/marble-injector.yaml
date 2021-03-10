@@ -75,6 +75,7 @@ webhooks:
         name: marble-injector
         namespace: marblerun
         path: "/mutate"
+      caBundle: {{ .Values.marbleInjector.CABundle }}
     rules:
     - operations: ["CREATE"]
       apiGroups: [""]
@@ -93,6 +94,7 @@ webhooks:
         name: marble-injector
         namespace: marblerun
         path: "/mutate-no-sgx"
+      caBundle: {{ .Values.marbleInjector.CABundle }}
     rules:
     - operations: ["CREATE"]
       apiGroups: [""]
@@ -102,6 +104,7 @@ webhooks:
     namespaceSelector:
       matchLabels:
         marblerun/inject: enabled
+        marblerun/inject-sgx: disabled
     admissionReviewVersions: ["v1", "v1beta1"]
     sideEffects: None
 {{ end }}
