@@ -37,7 +37,8 @@ sgxDevice:
 marbleInjector:
   start: false
   marbleInjectorReplicas: 1
-  CABundle: "CA_Bundle_Base64"
+  # Set this to use a custom CABundle for the MutatingWebhook
+  # CABundle: "CA_Bundle_Base64"
 
 
 # coordinator configuration
