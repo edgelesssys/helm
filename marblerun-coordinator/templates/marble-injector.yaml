@@ -78,7 +78,6 @@ webhooks:
         name: marble-injector
         namespace: marblerun
         path: "/mutate"
-      caBundle: {{ .Values.marbleInjector.CABundle }}
     rules:
     - operations: ["CREATE"]
       apiGroups: [""]
@@ -100,7 +99,6 @@ webhooks:
         name: marble-injector
         namespace: marblerun
         path: "/mutate-no-sgx"
-      caBundle: {{ .Values.marbleInjector.CABundle }}
     rules:
     - operations: ["CREATE"]
       apiGroups: [""]
