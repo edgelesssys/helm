@@ -2,7 +2,7 @@
 
 ## Documentation
 
-See the [Getting Started Guide](https://marblerun.sh/docs/getting-started/quickstart/) to set up a distributed confidential-computing app in a few simple steps. 
+See the [Getting Started Guide](https://marblerun.sh/docs/getting-started/quickstart/) to set up a distributed confidential-computing app in a few simple steps.
 For more comprehensive documentation, start with the [docs](https://marblerun.sh/docs/introduction/).
 
 ## Add Repository (stable)
@@ -36,9 +36,9 @@ their default values.
 | `coordinatorImage`                           | Docker image for the coordinator component | `ghcr.io/edgelesssys/coordinator` |
 | `coordinatorReplicas`                        | Number of replicas for each control plane pod | `1` |
 | `coordinator.meshServerHost`                 | Hostname of the mesh-api server | `0.0.0.0` |
-| `coordinator.meshServerPort`                 | Port of the mesh-api server configuration | `25554` |
+| `coordinator.meshServerPort`                 | Port of the mesh-api server configuration | `2001` |
 | `coordinator.clientServerHost`               | Hostname of the client-api server | `0.0.0.0` |
-| `coordinator.clientServerPort`               | Port of the client-api server configuration | `25555` |
+| `coordinator.clientServerPort`               | Port of the client-api server configuration | `4433` |
 | `coordinator.hostname`                       | DNS-Names for the coordinator certificate | `localhost` |
 | `coordinator.sealDir`                        | Path to the directory used for sealing data. Needs to be consistent with the persisten storage setup | `/coordinator/data/` |
 | `coordinator.simulation`                     | SGX simulation settings, set to 1 if your not running on an SGX capable cluster | `0` |

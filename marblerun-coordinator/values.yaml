@@ -48,10 +48,10 @@ coordinator:
   # Environment configuration for the coordinator control-plane
   # meshServerPort needs to be configured to the same port as in the data-plane marbles
   meshServerHost: "0.0.0.0"
-  meshServerPort: 25554
+  meshServerPort: 2001
   # clientServerPort needs to be configured to the same port as in your client tool stack
   clientServerHost: "0.0.0.0"
-  clientServerPort: 25555
+  clientServerPort: 4433
   # hosName needs to match the host you expect the coordinator to run on
   hostname: "localhost"
   # SEAL_DIR needs to be set according to persistent storage
