@@ -2,8 +2,28 @@ apiVersion: v1
 entries:
   marblerun-coordinator:
   - apiVersion: v2
+    appVersion: v0.3.1
+    created: "2021-04-15T09:37:10.025955184+02:00"
+    description: Marblerun is the service mesh for the age of confidential computing.
+    digest: c9e40677b945df7c7cb38b383c7f27ff46069ef7f7870cd3fc33261391632135
+    home: https://edgeless.systems
+    keywords:
+    - service-mesh
+    - confidential-computing
+    kubeVersion: '>=1.13.0-0'
+    maintainers:
+    - email: contact@edgeless.systems
+      name: Edgeless Systems
+      url: https://edgeless.systems/
+    name: marblerun-coordinator
+    sources:
+    - https://github.com/edgelesssys/marblerun
+    urls:
+    - https://helm.edgeless.systems/stable/marblerun-coordinator-0.3.1.tgz
+    version: 0.3.1
+  - apiVersion: v2
     appVersion: v0.3.0
-    created: "2021-03-15T09:26:59.670519277+01:00"
+    created: "2021-04-15T09:37:10.025587664+02:00"
     description: Marblerun is the service mesh for the age of confidential computing.
     digest: 727e86e25d1617c67ddb84e79b9234992e0f14dc2879d7eba93023e8d33501ba
     home: https://edgeless.systems
@@ -23,7 +43,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: v0.2.0
-    created: "2021-03-15T09:26:59.670107078+01:00"
+    created: "2021-04-15T09:37:10.024771919+02:00"
     description: Marblerun is the service mesh for the age of confidential computing.
     digest: a5b795e81ca420b3a1af53e62bb0d589c46317c8dc8e6b787e3bc9d8ab2017cc
     home: https://edgeless.systems
@@ -43,7 +63,7 @@ entries:
     version: 0.2.1
   - apiVersion: v2
     appVersion: v0.2.0
-    created: "2021-03-15T09:26:59.669758179+01:00"
+    created: "2021-04-15T09:37:10.023861569+02:00"
     description: Marblerun is the service mesh for the age of confidential computing.
     digest: c7112e3d950d5d17a17657cb77aec7242d2e05a5979bb59a24b120ff6a9319dd
     home: https://edgeless.systems
@@ -63,7 +83,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2021-03-15T09:26:59.669391879+01:00"
+    created: "2021-04-15T09:37:10.022885915+02:00"
     description: Marblerun is the service mesh for the age of confidential computing.
     digest: 933245bcfdb6718a99cf291e7c346fe77968705d921fcf3aedb0b1eed791a51a
     home: https://edgeless.systems
@@ -81,4 +101,4 @@ entries:
     urls:
     - https://helm.edgeless.systems/stable/marblerun-coordinator-0.1.0.tgz
     version: 0.1.0
-generated: "2021-03-15T09:26:59.668879181+01:00"
+generated: "2021-04-15T09:37:10.021690548+02:00"
