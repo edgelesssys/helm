@@ -26,13 +26,6 @@ global:
   # pullSecret: my-private-docker-registry-login-secret
 
 
-
-# sgx-device-plugin start flag
-sgxDevice:
-  # Set to "false" to disable starting of sgx-device-plugin pod
-  start: true
-
-
 # webhook configuration
 marbleInjector:
   start: false
@@ -62,7 +55,7 @@ coordinator:
   resources:
     limits:
       # Disable this if your running on a cluster with an SGX Device Plugin
-      kubernetes.azure.com/sgx_epc_mem_in_MiB: 10
+      sgx.intel.com/epc: 10
 
   # Set the storage class for your cluster
   # storageClass:
@@ -71,7 +64,9 @@ coordinator:
 # Tolerations constraints for control-plane components
 # https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/
 tolerations:
-- key: kubernetes.azure.com/sgx_epc_mem_in_MiB
+- key: sgx.intel.com/epc
+  operator: Exists
+  effect: NoSchedule
 
 # Node selection constraints for control-plane components
 # https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#nodeselector.

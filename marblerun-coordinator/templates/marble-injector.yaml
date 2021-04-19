@@ -44,6 +44,7 @@ spec:
         - -coordAddr=coordinator-mesh-api.{{ .Release.Namespace }}:{{ .Values.coordinator.meshServerPort }}
         - -tlsCertFile=/etc/webhook/certs/cert.pem
         - -tlsKeyFile=/etc/webhook/certs/key.pem
+        - -sgxResource={{ .Values.marbleInjector.resourceKey }}
         name: marble-injector
         image: "{{ .Values.global.image.repository }}/marble-injector:{{ .Values.global.image.version }}"
         imagePullPolicy: {{ .Values.global.image.pullPolicy }}
