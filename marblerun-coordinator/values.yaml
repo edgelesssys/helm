@@ -65,6 +65,8 @@ coordinator:
 # https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/
 tolerations:
 - key: sgx.intel.com/epc
+  operator: Exists
+  effect: NoSchedule
 
 # Node selection constraints for control-plane components
 # https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#nodeselector.
