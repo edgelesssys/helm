@@ -55,7 +55,7 @@ coordinator:
   resources:
     limits:
       # Disable this if your running on a cluster with an SGX Device Plugin
-      sgx.intel.com/epc: 10
+      sgx.intel.com/epc: "10Mi"
 
   # Set the storage class for your cluster
   # storageClass:
