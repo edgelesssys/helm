@@ -1,1 +1,1 @@
-../stable/README.md
+../marblerun-coordinator/README.md

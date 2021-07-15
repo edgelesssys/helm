@@ -1,6 +1,6 @@
 apiVersion: v2
 appVersion: v0.4.0
-description: Marblerun is the service mesh for the age of confidential computing.
+description: The control plane for confidential computing.
 home: https://edgeless.systems
 keywords:
 - service-mesh
@@ -14,3 +14,4 @@ maintainers:
   - name: Edgeless Systems
     email: contact@edgeless.systems
     url: https://edgeless.systems/
+icon: https://github.com/edgelesssys/helm/blob/main/marblerun_icon.svg
