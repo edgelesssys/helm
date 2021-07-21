@@ -1,3 +1,4 @@
+{{ if .Values.dcap }}
 apiVersion: 1
 kind: ConfigMap
 metadata:
@@ -13,3 +14,4 @@ data:
   sgx_default_qcnl.conf: |
     PCCS_URL={{ .Values.dcap.pccsUrl }}
     USE_SECURE_CERT={{ .Values.dcap.useSecureCert }}
+{{ end }}
