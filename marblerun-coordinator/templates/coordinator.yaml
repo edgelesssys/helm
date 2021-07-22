@@ -43,6 +43,8 @@ spec:
             value: "{{ .Values.coordinator.sealDir }}"
           - name: OE_SIMULATION
             value: "{{ .Values.coordinator.simulation }}"
+          - name: DCAP_LIBRARY
+            value: "{{ .Values.coordinator.dcapQpl }}"
           name: coordinator
           image: "{{ .Values.global.image.repository }}/coordinator:{{ .Values.global.image.version }}"
           imagePullPolicy: {{ .Values.global.image.pullPolicy }}
@@ -69,10 +71,20 @@ spec:
           volumeMounts:
           - name: coordinator-pv-storage
             mountPath: /coordinator/data
+          {{ if .Values.dcap }}
+          - name: dcap-conf
+            mountPath: /etc/sgx_default_qcnl.conf
+            subPath: sgx_default_qcnl.conf
+          {{ end }}
       volumes:
         - name: coordinator-pv-storage
           persistentVolumeClaim:
             claimName: coordinator-pv-claim
+        {{ if .Values.dcap }}
+        - name: dcap-conf
+          configMap:
+            name: coordinator-dcap-config
+        {{ end }}
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
