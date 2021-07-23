@@ -6,8 +6,10 @@ metadata:
   namespace: {{ .Release.Namespace }}
   labels:
     app.kubernetes.io/name: marble-injector
+    app.kubernetes.io/component: admission-controller-svc
     app.kubernetes.io/part-of: marblerun
     app.kubernetes.io/version: {{ .Values.global.image.version }}
+    app.kubernetes.io/created-by: {{ .Values.global.createdBy }}
 spec:
   ports:
   - port: 443
@@ -22,8 +24,12 @@ metadata:
   namespace: {{ .Release.Namespace }}
   labels:
     app.kubernetes.io/name: marble-injector
+    app.kubernetes.io/component: admission-controller
     app.kubernetes.io/part-of: marblerun
     app.kubernetes.io/version: {{ .Values.global.image.version }}
+    app.kubernetes.io/created-by: {{ .Values.global.createdBy }}
+    {{ .Values.global.coordinatorComponentLabel }}: admission-controller
+    {{ .Values.global.coordinatorNamespaceLabel }}: {{ .Release.Namespace }}
 spec:
   replicas: {{ .Values.marbleInjector.marbleInjectorReplicas }}
   selector:
@@ -35,8 +41,12 @@ spec:
     metadata:
       labels:
         app.kubernetes.io/name: marble-injector
+        app.kubernetes.io/component: admission-controller
         app.kubernetes.io/part-of: marblerun
         app.kubernetes.io/version: {{ .Values.global.image.version }}
+        app.kubernetes.io/created-by: {{ .Values.global.createdBy }}
+        {{ .Values.global.coordinatorComponentLabel }}: admission-controller
+        {{ .Values.global.coordinatorNamespaceLabel }}: {{ .Release.Namespace }}
         {{- with .Values.global.podLabels }}{{ toYaml . | trim | nindent 8 }}{{- end }}
     spec:
       containers:
@@ -55,6 +65,13 @@ spec:
         ports:
           - containerPort: 8443
             name: http
+        resources:
+          requests:
+            memory: "5Mi"
+            cpu: "1m"
+          limits:
+            memory: "15Mi"
+            cpu: "10m"
 
       volumes:
       - name: webhook-certs
@@ -67,8 +84,10 @@ metadata:
   name: marble-injector
   labels:
     app.kubernetes.io/name: marble-injector
+    app.kubernetes.io/component: admission-controller-configuration
     app.kubernetes.io/part-of: marblerun
     app.kubernetes.io/version: {{ .Values.global.image.version }}
+    app.kubernetes.io/created-by: {{ .Values.global.createdBy }}
 webhooks:
   - name: marble-injector.cluster.local
     clientConfig:
