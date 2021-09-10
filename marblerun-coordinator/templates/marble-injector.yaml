@@ -38,6 +38,8 @@ spec:
         app.kubernetes.io/part-of: marblerun
         app.kubernetes.io/version: {{ .Values.global.image.version }}
         {{- with .Values.global.podLabels }}{{ toYaml . | trim | nindent 8 }}{{- end }}
+      annotations:
+        openservicemesh.io/sidecar-injection: disabled
     spec:
       containers:
       - args:
