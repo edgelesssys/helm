@@ -65,7 +65,6 @@ spec:
               name: http
             - containerPort: {{ .Values.coordinator.meshServerPort }}
               name: grcp
-
           resources:
           {{- toYaml .Values.coordinator.resources | nindent 12 }}
           volumeMounts:
@@ -130,3 +129,4 @@ spec:
   - name: grcp
     port: {{ .Values.coordinator.meshServerPort }}
     targetPort: {{ .Values.coordinator.meshServerPort }}
+    appProtocol: tcp
