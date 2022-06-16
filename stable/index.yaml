@@ -6,8 +6,35 @@ entries:
         - name: Chart Source
           url: https://github.com/edgelesssys/edgelessdb/tree/main/charts
     apiVersion: v2
+    appVersion: v0.3.0
+    created: "2022-06-16T15:22:59.328153549+02:00"
+    description: EdgelessDB is a MySQL-compatible database for confidential computing.
+      It runs entirely inside a secure enclave and comes with advanced features for
+      collaboration, recovery, and access control.
+    digest: ec41b1f287c79cced0a19b9368a6e6fb467c76e0999992eb26d34ac39d78dbaf
+    home: https://edgeless.systems
+    icon: https://raw.githubusercontent.com/edgelesssys/helm/main/edgelessdb_icon.svg
+    keywords:
+    - database
+    - confidential-computing
+    maintainers:
+    - email: contact@edgeless.systems
+      name: Edgeless Systems
+      url: https://edgeless.systems/
+    name: edgelessdb
+    sources:
+    - https://github.com/edgelesssys/edgelessdb
+    type: application
+    urls:
+    - https://helm.edgeless.systems/stable/edgelessdb-v0.3.0.tgz
+    version: v0.3.0
+  - annotations:
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/edgelesssys/edgelessdb/tree/main/charts
+    apiVersion: v2
     appVersion: v0.2.1
-    created: "2021-11-08T10:32:03.473144363+01:00"
+    created: "2022-06-16T15:22:59.327648437+02:00"
     description: EdgelessDB is a MySQL-compatible database for confidential computing.
       It runs entirely inside a secure enclave and comes with advanced features for
       collaboration, recovery, and access control.
@@ -34,7 +61,7 @@ entries:
           url: https://github.com/edgelesssys/edgelessdb/tree/main/charts
     apiVersion: v2
     appVersion: v0.2.0
-    created: "2021-11-08T10:32:03.472820875+01:00"
+    created: "2022-06-16T15:22:59.327299129+02:00"
     description: EdgelessDB is a MySQL-compatible database for confidential computing.
       It runs entirely inside a secure enclave and comes with advanced features for
       collaboration, recovery, and access control.
@@ -61,7 +88,7 @@ entries:
           url: https://github.com/edgelesssys/edgelessdb/tree/main/charts
     apiVersion: v2
     appVersion: v0.1.1
-    created: "2021-11-08T10:32:03.472475326+01:00"
+    created: "2022-06-16T15:22:59.32694072+02:00"
     description: EdgelessDB is a MySQL-compatible database for confidential computing.
       It runs entirely inside a secure enclave and comes with advanced features for
       collaboration, recovery, and access control.
@@ -89,7 +116,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v0.5.1
-    created: "2021-11-08T10:32:03.473529958+01:00"
+    created: "2022-06-16T15:22:59.328538759+02:00"
     description: The control plane for confidential computing.
     digest: b856bd57dcdbe0fcf493e54dd759931346ddc0293e0dba34abddd114a15cd503
     home: https://edgeless.systems
@@ -115,7 +142,7 @@ entries:
           url: https://github.com/edgelesssys/helm
     apiVersion: v2
     appVersion: v0.5.0
-    created: "2021-11-08T10:32:03.479594226+01:00"
+    created: "2022-06-16T15:22:59.331070221+02:00"
     description: The control plane for confidential computing.
     digest: 0435070d97b9a2b23181c42f81425e9f5672fa0f6ea8f31c3291bdfb4caef874
     home: https://edgeless.systems
@@ -140,7 +167,7 @@ entries:
           url: https://github.com/edgelesssys/helm
     apiVersion: v2
     appVersion: v0.4.0
-    created: "2021-11-08T10:32:03.479190538+01:00"
+    created: "2022-06-16T15:22:59.330691511+02:00"
     description: The control plane for confidential computing.
     digest: ab15beea7919ad055c6e328d046c1749c8a153a7406762c40009edb2f2c41347
     home: https://edgeless.systems
@@ -161,7 +188,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: v0.3.2
-    created: "2021-11-08T10:32:03.478635877+01:00"
+    created: "2022-06-16T15:22:59.330336303+02:00"
     description: Marblerun is the service mesh for the age of confidential computing.
     digest: ad069f7feeb7a65923098098e1cc7e935417a92da20f7df1e49d6169edef0e0b
     home: https://edgeless.systems
@@ -181,7 +208,7 @@ entries:
     version: 0.3.2
   - apiVersion: v2
     appVersion: v0.3.1
-    created: "2021-11-08T10:32:03.477883465+01:00"
+    created: "2022-06-16T15:22:59.330039995+02:00"
     description: Marblerun is the service mesh for the age of confidential computing.
     digest: c9e40677b945df7c7cb38b383c7f27ff46069ef7f7870cd3fc33261391632135
     home: https://edgeless.systems
@@ -201,7 +228,7 @@ entries:
     version: 0.3.1
   - apiVersion: v2
     appVersion: v0.3.0
-    created: "2021-11-08T10:32:03.476187693+01:00"
+    created: "2022-06-16T15:22:59.329725288+02:00"
     description: Marblerun is the service mesh for the age of confidential computing.
     digest: 727e86e25d1617c67ddb84e79b9234992e0f14dc2879d7eba93023e8d33501ba
     home: https://edgeless.systems
@@ -221,7 +248,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: v0.2.0
-    created: "2021-11-08T10:32:03.475574333+01:00"
+    created: "2022-06-16T15:22:59.32940848+02:00"
     description: Marblerun is the service mesh for the age of confidential computing.
     digest: a5b795e81ca420b3a1af53e62bb0d589c46317c8dc8e6b787e3bc9d8ab2017cc
     home: https://edgeless.systems
@@ -241,7 +268,7 @@ entries:
     version: 0.2.1
   - apiVersion: v2
     appVersion: v0.2.0
-    created: "2021-11-08T10:32:03.474553731+01:00"
+    created: "2022-06-16T15:22:59.329120773+02:00"
     description: Marblerun is the service mesh for the age of confidential computing.
     digest: c7112e3d950d5d17a17657cb77aec7242d2e05a5979bb59a24b120ff6a9319dd
     home: https://edgeless.systems
@@ -261,7 +288,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2021-11-08T10:32:03.474131353+01:00"
+    created: "2022-06-16T15:22:59.328834366+02:00"
     description: Marblerun is the service mesh for the age of confidential computing.
     digest: 933245bcfdb6718a99cf291e7c346fe77968705d921fcf3aedb0b1eed791a51a
     home: https://edgeless.systems
@@ -279,4 +306,4 @@ entries:
     urls:
     - https://helm.edgeless.systems/stable/marblerun-coordinator-0.1.0.tgz
     version: 0.1.0
-generated: "2021-11-08T10:32:03.471388157+01:00"
+generated: "2022-06-16T15:22:59.3261354+02:00"
