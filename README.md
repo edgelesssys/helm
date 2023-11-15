@@ -22,5 +22,5 @@ helm install marblerun edgeless/marblerun \
 ```sh
 helm install edgelessdb edgeless/edgelessdb \
     --create-namespace \
-    -n marblerun
+    -n edb
 ```
