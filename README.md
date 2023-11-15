@@ -24,3 +24,15 @@ helm install edgelessdb edgeless/edgelessdb \
     --create-namespace \
     -n edb
 ```
+
+## Constellation S3 proxy
+
+[edgeless/s3proxy](https://github.com/edgelesssys/constellation/tree/main/s3proxy/deploy/s3proxy)
+
+```sh
+helm install s3proxy edgeless/s3proxy \
+    --create-namespace \
+    -n s3proxy \
+    --set awsAccessKeyID="$ACCESS_KEY" \
+    --set awsSecretAccessKey="$ACCESS_SECRET"
+```
