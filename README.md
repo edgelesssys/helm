@@ -7,10 +7,10 @@ helm repo update
 
 ## MarbleRun
 
-[edgeless/marblerun-coordinator](https://github.com/edgelesssys/marblerun/tree/master/charts)
+[edgeless/marblerun](https://github.com/edgelesssys/marblerun/tree/master/charts)
 
 ```sh
-helm install marblerun edgeless/marblerun-coordinator \
+helm install marblerun edgeless/marblerun \
     --create-namespace \
     -n marblerun
 ```
@@ -22,5 +22,17 @@ helm install marblerun edgeless/marblerun-coordinator \
 ```sh
 helm install edgelessdb edgeless/edgelessdb \
     --create-namespace \
-    -n marblerun
+    -n edb
+```
+
+## Constellation S3 proxy
+
+[edgeless/s3proxy](https://github.com/edgelesssys/constellation/tree/main/s3proxy/deploy/s3proxy)
+
+```sh
+helm install s3proxy edgeless/s3proxy \
+    --create-namespace \
+    -n s3proxy \
+    --set awsAccessKeyID="$ACCESS_KEY" \
+    --set awsSecretAccessKey="$ACCESS_SECRET"
 ```
