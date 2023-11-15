@@ -7,10 +7,10 @@ helm repo update
 
 ## MarbleRun
 
-[edgeless/marblerun-coordinator](https://github.com/edgelesssys/marblerun/tree/master/charts)
+[edgeless/marblerun](https://github.com/edgelesssys/marblerun/tree/master/charts)
 
 ```sh
-helm install marblerun edgeless/marblerun-coordinator \
+helm install marblerun edgeless/marblerun \
     --create-namespace \
     -n marblerun
 ```
