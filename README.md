@@ -40,5 +40,5 @@ helm install s3proxy edgeless/s3proxy \
 ## Continuum continuum-proxy
 
 ```sh
-helm intsall continuum-proxy edgeless/continuum-proxy
+helm install continuum-proxy edgeless/continuum-proxy
 ```
