@@ -36,3 +36,13 @@ helm install s3proxy edgeless/s3proxy \
     --set awsAccessKeyID="$ACCESS_KEY" \
     --set awsSecretAccessKey="$ACCESS_SECRET"
 ```
+
+## Continuum-proxy
+
+[continuum-proxy](https://docs.edgeless.systems/continuum/apis/continuum-proxy)
+
+```sh
+helm install continuum-proxy edgeless/continuum-proxy \
+    --create-namespace \
+    -n continuum-proxy
+```
