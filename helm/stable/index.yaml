@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  continuum-proxy:
+  - apiVersion: v2
+    created: "2024-10-17T09:29:51.130685682+02:00"
+    description: A Helm chart for the Continuum Proxy.
+    digest: cf9912ad9586fd853d6a6b961d0f7b12c51f8c3b10eddeb75b1c4b0da61bde99
+    name: continuum-proxy
+    type: application
+    urls:
+    - https://helm.edgeless.systems/stable/continuum-proxy-1.2.0.tgz
+    version: 1.2.0
+generated: "2024-10-17T09:29:51.129353786+02:00"
