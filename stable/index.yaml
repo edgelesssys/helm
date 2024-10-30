@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   continuum-proxy:
   - apiVersion: v2
-    created: "2024-10-25T14:30:02.038692279Z"
+    created: "2024-10-30T12:20:34.777808243+01:00"
     description: A Helm chart for the Continuum Proxy.
     digest: 9dd133eade4cc1383598928090032df105398bcd7a84be368429eb4b88479ccb
     name: continuum-proxy
@@ -11,7 +11,7 @@ entries:
     - https://helm.edgeless.systems/stable/continuum-proxy-1.2.2.tgz
     version: 1.2.2
   - apiVersion: v2
-    created: "2024-10-25T14:30:02.038396117Z"
+    created: "2024-10-30T12:20:34.77759831+01:00"
     description: A Helm chart for the Continuum Proxy.
     digest: 667130615c407b9cd00c5dabbc05c54d8c79824988db59d0286684b689816084
     name: continuum-proxy
@@ -20,7 +20,7 @@ entries:
     - https://helm.edgeless.systems/stable/continuum-proxy-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
-    created: "2024-10-25T14:30:02.038114522Z"
+    created: "2024-10-30T12:20:34.77739039+01:00"
     description: A Helm chart for the Continuum Proxy.
     digest: 398da0174ca2ad3413cdb283327947c00aca6f91dbdb4c2cb94f6f54f88181e6
     name: continuum-proxy
@@ -29,7 +29,7 @@ entries:
     - https://helm.edgeless.systems/stable/continuum-proxy-1.0.0.tgz
     version: 1.0.0
   - apiVersion: v2
-    created: "2024-10-25T14:30:02.03781317Z"
+    created: "2024-10-30T12:20:34.776998355+01:00"
     description: A Helm chart for the Continuum Proxy.
     digest: 4261454fe54ec1760d84e582e64038c4a0ebd5405b8b1cd3ee68f887a578909c
     name: continuum-proxy
@@ -44,7 +44,7 @@ entries:
           url: https://github.com/edgelesssys/edgelessdb/tree/main/charts
     apiVersion: v2
     appVersion: v0.3.2
-    created: "2024-10-25T14:30:02.040823694Z"
+    created: "2024-10-30T12:20:34.780437022+01:00"
     description: EdgelessDB is a MySQL-compatible database for confidential computing.
       It runs entirely inside a secure enclave and comes with advanced features for
       collaboration, recovery, and access control.
@@ -71,7 +71,7 @@ entries:
           url: https://github.com/edgelesssys/edgelessdb/tree/main/charts
     apiVersion: v2
     appVersion: v0.3.1
-    created: "2024-10-25T14:30:02.040464975Z"
+    created: "2024-10-30T12:20:34.779988351+01:00"
     description: EdgelessDB is a MySQL-compatible database for confidential computing.
       It runs entirely inside a secure enclave and comes with advanced features for
       collaboration, recovery, and access control.
@@ -98,7 +98,7 @@ entries:
           url: https://github.com/edgelesssys/edgelessdb/tree/main/charts
     apiVersion: v2
     appVersion: v0.3.0
-    created: "2024-10-25T14:30:02.040112578Z"
+    created: "2024-10-30T12:20:34.77953446+01:00"
     description: EdgelessDB is a MySQL-compatible database for confidential computing.
       It runs entirely inside a secure enclave and comes with advanced features for
       collaboration, recovery, and access control.
@@ -125,7 +125,7 @@ entries:
           url: https://github.com/edgelesssys/edgelessdb/tree/main/charts
     apiVersion: v2
     appVersion: v0.2.1
-    created: "2024-10-25T14:30:02.039786821Z"
+    created: "2024-10-30T12:20:34.779096659+01:00"
     description: EdgelessDB is a MySQL-compatible database for confidential computing.
       It runs entirely inside a secure enclave and comes with advanced features for
       collaboration, recovery, and access control.
@@ -152,7 +152,7 @@ entries:
           url: https://github.com/edgelesssys/edgelessdb/tree/main/charts
     apiVersion: v2
     appVersion: v0.2.0
-    created: "2024-10-25T14:30:02.03941656Z"
+    created: "2024-10-30T12:20:34.7786596+01:00"
     description: EdgelessDB is a MySQL-compatible database for confidential computing.
       It runs entirely inside a secure enclave and comes with advanced features for
       collaboration, recovery, and access control.
@@ -179,7 +179,7 @@ entries:
           url: https://github.com/edgelesssys/edgelessdb/tree/main/charts
     apiVersion: v2
     appVersion: v0.1.1
-    created: "2024-10-25T14:30:02.039066958Z"
+    created: "2024-10-30T12:20:34.778237278+01:00"
     description: EdgelessDB is a MySQL-compatible database for confidential computing.
       It runs entirely inside a secure enclave and comes with advanced features for
       collaboration, recovery, and access control.
@@ -206,8 +206,33 @@ entries:
         - name: Chart Source
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
+    appVersion: v1.6.0
+    created: "2024-10-30T12:20:34.787969364+01:00"
+    description: The control plane for confidential computing.
+    digest: 9af242b33a3af5ab08846b1b8655145f4864b2236f3c6b4c005e7e58f7494347
+    home: https://edgeless.systems
+    icon: https://raw.githubusercontent.com/edgelesssys/helm/main/marblerun_icon.svg
+    keywords:
+    - service-mesh
+    - confidential-computing
+    kubeVersion: '>=1.13.0-0'
+    maintainers:
+    - email: contact@edgeless.systems
+      name: Edgeless Systems
+      url: https://edgeless.systems/
+    name: marblerun
+    sources:
+    - https://github.com/edgelesssys/marblerun
+    urls:
+    - https://helm.edgeless.systems/stable/marblerun-1.6.0.tgz
+    version: 1.6.0
+  - annotations:
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/edgelesssys/marblerun/tree/master/charts
+    apiVersion: v2
     appVersion: v1.5.2
-    created: "2024-10-25T14:30:02.048330673Z"
+    created: "2024-10-30T12:20:34.787618346+01:00"
     description: The control plane for confidential computing.
     digest: ab7edd4c7ccc996e57a324b3aa4ab5f442bc39e727d2e5b4a180d91e0a2c4c46
     home: https://edgeless.systems
@@ -232,7 +257,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v1.5.1
-    created: "2024-10-25T14:30:02.047870555Z"
+    created: "2024-10-30T12:20:34.787259644+01:00"
     description: The control plane for confidential computing.
     digest: 60fcf102bff3ab1864a523abe8d43988fdb906f679ebd62744d80049cb0f0dad
     home: https://edgeless.systems
@@ -257,7 +282,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v1.5.0
-    created: "2024-10-25T14:30:02.047382355Z"
+    created: "2024-10-30T12:20:34.786738437+01:00"
     description: The control plane for confidential computing.
     digest: ad69508294065300a4cbd0e7560679e61358958617197e27070d896b2a4e6659
     home: https://edgeless.systems
@@ -282,7 +307,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v1.4.1
-    created: "2024-10-25T14:30:02.046904293Z"
+    created: "2024-10-30T12:20:34.786127822+01:00"
     description: The control plane for confidential computing.
     digest: c3b39e7b0fd0590b2f18336819e91dee7e929aac7ac2fa7a0b3a203d70ce69b8
     home: https://edgeless.systems
@@ -307,7 +332,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v1.4.0
-    created: "2024-10-25T14:30:02.046405634Z"
+    created: "2024-10-30T12:20:34.785544548+01:00"
     description: The control plane for confidential computing.
     digest: 4b291153af4b0d11b53714cb0b7485e0a4c28dd24e88e7693829823519de458b
     home: https://edgeless.systems
@@ -332,7 +357,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v1.3.0
-    created: "2024-10-25T14:30:02.045920048Z"
+    created: "2024-10-30T12:20:34.785036365+01:00"
     description: The control plane for confidential computing.
     digest: fbd5e8d447844c9dad6c56efbc0b269d7ce245d31536f6161c4d9ef9ff8fac1b
     home: https://edgeless.systems
@@ -357,7 +382,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v1.2.0
-    created: "2024-10-25T14:30:02.04538485Z"
+    created: "2024-10-30T12:20:34.784540466+01:00"
     description: The control plane for confidential computing.
     digest: be4c1afb2986f2faac3e7371678a9ebdda94d9fde812afdd56f2d1dfe99aaf78
     home: https://edgeless.systems
@@ -382,7 +407,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v1.1.0
-    created: "2024-10-25T14:30:02.044115388Z"
+    created: "2024-10-30T12:20:34.784054555+01:00"
     description: The control plane for confidential computing.
     digest: 891925657879a729e77c52f2999cc6b5a2c91b7e1464347bb1e8e84ada6c9a84
     home: https://edgeless.systems
@@ -407,7 +432,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2024-10-25T14:30:02.043152994Z"
+    created: "2024-10-30T12:20:34.783537004+01:00"
     description: The control plane for confidential computing.
     digest: ea78f6421ef1771be49be464494577fd8cf9fffc1636085cf00d116c8d3be238
     home: https://edgeless.systems
@@ -432,7 +457,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v0.6.2
-    created: "2024-10-25T14:30:02.042356272Z"
+    created: "2024-10-30T12:20:34.782994667+01:00"
     description: The control plane for confidential computing.
     digest: 6689dbb25172a50d4a4dadfeea1fd8bdddd923f671d30fc50bac59eeb62be1e1
     home: https://edgeless.systems
@@ -457,7 +482,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v0.6.1
-    created: "2024-10-25T14:30:02.041990801Z"
+    created: "2024-10-30T12:20:34.782396816+01:00"
     description: The control plane for confidential computing.
     digest: 78c00870ed6edb0536bb6dbf4676658f06c9ad08841bb23b6ed35f6b3491dfd2
     home: https://edgeless.systems
@@ -482,7 +507,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v0.6.0
-    created: "2024-10-25T14:30:02.041574294Z"
+    created: "2024-10-30T12:20:34.781468576+01:00"
     description: The control plane for confidential computing.
     digest: 038ad67d625a231f3732727be9c5159fff6d32e1f1c8fee3fe94d52c1ef42ef0
     home: https://edgeless.systems
@@ -507,7 +532,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v0.5.1
-    created: "2024-10-25T14:30:02.041186421Z"
+    created: "2024-10-30T12:20:34.78095359+01:00"
     description: The control plane for confidential computing.
     digest: b856bd57dcdbe0fcf493e54dd759931346ddc0293e0dba34abddd114a15cd503
     home: https://edgeless.systems
@@ -533,7 +558,7 @@ entries:
           url: https://github.com/edgelesssys/helm
     apiVersion: v2
     appVersion: v0.5.0
-    created: "2024-10-25T14:30:02.050835765Z"
+    created: "2024-10-30T12:20:34.791981296+01:00"
     description: The control plane for confidential computing.
     digest: 0435070d97b9a2b23181c42f81425e9f5672fa0f6ea8f31c3291bdfb4caef874
     home: https://edgeless.systems
@@ -558,7 +583,7 @@ entries:
           url: https://github.com/edgelesssys/helm
     apiVersion: v2
     appVersion: v0.4.0
-    created: "2024-10-25T14:30:02.050437893Z"
+    created: "2024-10-30T12:20:34.7914764+01:00"
     description: The control plane for confidential computing.
     digest: ab15beea7919ad055c6e328d046c1749c8a153a7406762c40009edb2f2c41347
     home: https://edgeless.systems
@@ -579,7 +604,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: v0.3.2
-    created: "2024-10-25T14:30:02.050113067Z"
+    created: "2024-10-30T12:20:34.790646864+01:00"
     description: Marblerun is the service mesh for the age of confidential computing.
     digest: ad069f7feeb7a65923098098e1cc7e935417a92da20f7df1e49d6169edef0e0b
     home: https://edgeless.systems
@@ -599,7 +624,7 @@ entries:
     version: 0.3.2
   - apiVersion: v2
     appVersion: v0.3.1
-    created: "2024-10-25T14:30:02.049826653Z"
+    created: "2024-10-30T12:20:34.79023929+01:00"
     description: Marblerun is the service mesh for the age of confidential computing.
     digest: c9e40677b945df7c7cb38b383c7f27ff46069ef7f7870cd3fc33261391632135
     home: https://edgeless.systems
@@ -619,7 +644,7 @@ entries:
     version: 0.3.1
   - apiVersion: v2
     appVersion: v0.3.0
-    created: "2024-10-25T14:30:02.049500615Z"
+    created: "2024-10-30T12:20:34.789808653+01:00"
     description: Marblerun is the service mesh for the age of confidential computing.
     digest: 727e86e25d1617c67ddb84e79b9234992e0f14dc2879d7eba93023e8d33501ba
     home: https://edgeless.systems
@@ -639,7 +664,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: v0.2.0
-    created: "2024-10-25T14:30:02.049194244Z"
+    created: "2024-10-30T12:20:34.789325557+01:00"
     description: Marblerun is the service mesh for the age of confidential computing.
     digest: a5b795e81ca420b3a1af53e62bb0d589c46317c8dc8e6b787e3bc9d8ab2017cc
     home: https://edgeless.systems
@@ -659,7 +684,7 @@ entries:
     version: 0.2.1
   - apiVersion: v2
     appVersion: v0.2.0
-    created: "2024-10-25T14:30:02.048915193Z"
+    created: "2024-10-30T12:20:34.788847391+01:00"
     description: Marblerun is the service mesh for the age of confidential computing.
     digest: c7112e3d950d5d17a17657cb77aec7242d2e05a5979bb59a24b120ff6a9319dd
     home: https://edgeless.systems
@@ -679,7 +704,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2024-10-25T14:30:02.048633007Z"
+    created: "2024-10-30T12:20:34.788379984+01:00"
     description: Marblerun is the service mesh for the age of confidential computing.
     digest: 933245bcfdb6718a99cf291e7c346fe77968705d921fcf3aedb0b1eed791a51a
     home: https://edgeless.systems
@@ -700,7 +725,7 @@ entries:
   marblerun-enterprise:
   - apiVersion: v2
     appVersion: eval-2
-    created: "2024-10-25T14:30:02.051539497Z"
+    created: "2024-10-30T12:20:34.792491453+01:00"
     description: The control plane for confidential computing.
     digest: 19efaf4e76f76c827284080b20aa0c5af984bdc912a74e38c2459039e0d637f5
     home: https://edgeless.systems
@@ -721,7 +746,7 @@ entries:
     version: 0.0.1
   s3proxy:
   - apiVersion: v2
-    created: "2024-10-25T14:30:02.055678546Z"
+    created: "2024-10-30T12:20:34.794428545+01:00"
     description: Helm chart to deploy s3proxy.
     digest: 619b49eb3a2eccf1d3694592abf0198b484fa27354d451fc9dd69527ff7e166e
     name: s3proxy
@@ -730,7 +755,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.19.0.tgz
     version: 2.19.0
   - apiVersion: v2
-    created: "2024-10-25T14:30:02.055510823Z"
+    created: "2024-10-30T12:20:34.794323578+01:00"
     description: Helm chart to deploy s3proxy.
     digest: bd2343963f2011866199108532379f649f8b3ba72a60a5d327bb8498f55d01eb
     name: s3proxy
@@ -739,7 +764,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.18.0.tgz
     version: 2.18.0
   - apiVersion: v2
-    created: "2024-10-25T14:30:02.05536468Z"
+    created: "2024-10-30T12:20:34.794211237+01:00"
     description: Helm chart to deploy s3proxy.
     digest: ee19b555cd4cbbae6b1afc55c7e46a28897a0e762e1c0177edeb6f380ddb335e
     name: s3proxy
@@ -748,7 +773,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.17.0.tgz
     version: 2.17.0
   - apiVersion: v2
-    created: "2024-10-25T14:30:02.055220942Z"
+    created: "2024-10-30T12:20:34.794094118+01:00"
     description: Helm chart to deploy s3proxy.
     digest: 306f30e3c68c85d3ac1f09d1839f3cac240e29b4a9e92172066f44aed97fbb3a
     name: s3proxy
@@ -757,7 +782,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.16.4.tgz
     version: 2.16.4
   - apiVersion: v2
-    created: "2024-10-25T14:30:02.055072586Z"
+    created: "2024-10-30T12:20:34.793976858+01:00"
     description: Helm chart to deploy s3proxy.
     digest: a5d9d86f5b4352872bf5bb66c56f31026fcd1286b2a2fcecd6636f95c7881c74
     name: s3proxy
@@ -766,7 +791,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.16.3.tgz
     version: 2.16.3
   - apiVersion: v2
-    created: "2024-10-25T14:30:02.054926052Z"
+    created: "2024-10-30T12:20:34.793861512+01:00"
     description: Helm chart to deploy s3proxy.
     digest: 80a8447ebe34e65f7d2e9c991899b0483e1a4c71badf2802a2758abbec7757a7
     name: s3proxy
@@ -775,7 +800,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.16.2.tgz
     version: 2.16.2
   - apiVersion: v2
-    created: "2024-10-25T14:30:02.054775552Z"
+    created: "2024-10-30T12:20:34.793740545+01:00"
     description: Helm chart to deploy s3proxy.
     digest: dbfcc6a7cfa48393a2116934653e5ac4b803925e2ec343be971666f39b1ca17b
     name: s3proxy
@@ -784,7 +809,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.16.1.tgz
     version: 2.16.1
   - apiVersion: v2
-    created: "2024-10-25T14:30:02.054623859Z"
+    created: "2024-10-30T12:20:34.793612475+01:00"
     description: Helm chart to deploy s3proxy.
     digest: 1953182789b575258e78356340936a313db8cc4d15e6d4cba3b87e24ad94d1f2
     name: s3proxy
@@ -793,7 +818,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.16.0.tgz
     version: 2.16.0
   - apiVersion: v2
-    created: "2024-10-25T14:30:02.054440166Z"
+    created: "2024-10-30T12:20:34.793495335+01:00"
     description: Helm chart to deploy s3proxy.
     digest: bcf6761f3a50d3bd8f3fb0324c0a1da290d32f74b18135f3b56867262658bc57
     name: s3proxy
@@ -802,7 +827,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.15.1.tgz
     version: 2.15.1
   - apiVersion: v2
-    created: "2024-10-25T14:30:02.054286229Z"
+    created: "2024-10-30T12:20:34.793372886+01:00"
     description: Helm chart to deploy s3proxy.
     digest: e6dfdbe4e6ab00f83c471209dc6d649b73eaed3bbf4402c3ef78fa9586ef5e4e
     name: s3proxy
@@ -811,7 +836,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.15.0.tgz
     version: 2.15.0
   - apiVersion: v2
-    created: "2024-10-25T14:30:02.054108367Z"
+    created: "2024-10-30T12:20:34.793245026+01:00"
     description: Helm chart to deploy s3proxy.
     digest: 7e73374f7f1dae224f4e35fbc7bded5fc7aaa4ecb20af2b4822376c0c17a864e
     name: s3proxy
@@ -820,7 +845,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.14.3.tgz
     version: 2.14.3
   - apiVersion: v2
-    created: "2024-10-25T14:30:02.053494629Z"
+    created: "2024-10-30T12:20:34.793127325+01:00"
     description: Helm chart to deploy s3proxy.
     digest: 7081dc5aff40105e16b37e50c7f2e013cbc5f2e29a0525791f77e6bf78a876b2
     name: s3proxy
@@ -829,7 +854,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.14.2.tgz
     version: 2.14.2
   - apiVersion: v2
-    created: "2024-10-25T14:30:02.053224525Z"
+    created: "2024-10-30T12:20:34.79300723+01:00"
     description: Helm chart to deploy s3proxy.
     digest: a85de0e422fb6629a0dc111f5da49dd467039e2814fccb83cc6165e02ff01f2b
     name: s3proxy
@@ -838,7 +863,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.14.1.tgz
     version: 2.14.1
   - apiVersion: v2
-    created: "2024-10-25T14:30:02.052950494Z"
+    created: "2024-10-30T12:20:34.792882075+01:00"
     description: Helm chart to deploy s3proxy.
     digest: 3c6a90807312bae71d8545c201786ef039240f92ca5a35343123051dc825be84
     name: s3proxy
@@ -847,7 +872,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.14.0.tgz
     version: 2.14.0
   - apiVersion: v2
-    created: "2024-10-25T14:30:02.05267995Z"
+    created: "2024-10-30T12:20:34.792755157+01:00"
     description: Helm chart to deploy s3proxy.
     digest: 221a7f22d5900de160f1c23a1b76b09e07237ed8cffd10f360db0448e2526dff
     name: s3proxy
@@ -856,7 +881,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.13.0.tgz
     version: 2.13.0
   - apiVersion: v2
-    created: "2024-10-25T14:30:02.052362668Z"
+    created: "2024-10-30T12:20:34.792626326+01:00"
     description: Helm chart to deploy s3proxy.
     digest: 404d62fa523ed771f9cfe4b0ad2cc2115d933e295292fd2bc0fd35861576b51e
     name: s3proxy
@@ -864,4 +889,4 @@ entries:
     urls:
     - https://helm.edgeless.systems/stable/s3proxy-2.12.0.tgz
     version: 2.12.0
-generated: "2024-10-25T14:30:02.037310903Z"
+generated: "2024-10-30T12:20:34.76773668+01:00"
