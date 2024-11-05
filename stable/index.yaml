@@ -755,6 +755,15 @@ entries:
     version: 0.0.1
   s3proxy:
   - apiVersion: v2
+    created: "2024-11-04T08:10:33.242576279Z"
+    description: Helm chart to deploy s3proxy.
+    digest: a1e2c05c04ae0eadd352eaaf977aaa7790490bc37b5d7e0094d4a230d04bf444
+    name: s3proxy
+    type: application
+    urls:
+    - https://helm.edgeless.systems/stable/s3proxy-2.19.1.tgz
+    version: 2.19.1
+  - apiVersion: v2
     created: "2024-10-31T16:45:56.208855754Z"
     description: Helm chart to deploy s3proxy.
     digest: 619b49eb3a2eccf1d3694592abf0198b484fa27354d451fc9dd69527ff7e166e
