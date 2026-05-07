@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   continuum-proxy:
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.350203746Z"
+    created: "2026-05-07T07:37:16.652254437Z"
     description: A Helm chart for the Continuum Proxy.
     digest: 7b9f69ac2eb3d3fdee8a63108f9a1a526a663bacb355fd40b9026e3299f2a2fa
     name: continuum-proxy
@@ -11,7 +11,7 @@ entries:
     - https://helm.edgeless.systems/stable/continuum-proxy-1.5.1.tgz
     version: 1.5.1
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.349670126Z"
+    created: "2026-05-07T07:37:16.651972211Z"
     description: A Helm chart for the Continuum Proxy.
     digest: 791e1cc7766af4d748347ce3423b8808703c7380049e9d37a1fad680f37fe976
     name: continuum-proxy
@@ -20,7 +20,7 @@ entries:
     - https://helm.edgeless.systems/stable/continuum-proxy-1.5.0.tgz
     version: 1.5.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.349177955Z"
+    created: "2026-05-07T07:37:16.65175959Z"
     description: A Helm chart for the Continuum Proxy.
     digest: 5917842da000f453b07323cac9ad250adccdedacbd34f9eb84765cde1116d946
     name: continuum-proxy
@@ -29,7 +29,7 @@ entries:
     - https://helm.edgeless.systems/stable/continuum-proxy-1.4.1.tgz
     version: 1.4.1
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.348678048Z"
+    created: "2026-05-07T07:37:16.651519158Z"
     description: A Helm chart for the Continuum Proxy.
     digest: e438a5013bd04c07d8e0ddb9ae7397f5562f43579c4b91986b9a2547facc26a9
     name: continuum-proxy
@@ -38,7 +38,7 @@ entries:
     - https://helm.edgeless.systems/stable/continuum-proxy-1.4.0.tgz
     version: 1.4.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.348209971Z"
+    created: "2026-05-07T07:37:16.651283222Z"
     description: A Helm chart for the Continuum Proxy.
     digest: bcc3b298fd2cb97098cf2166137c28e9aba33c4a0407ce2b5c6b37972488e93c
     name: continuum-proxy
@@ -47,7 +47,7 @@ entries:
     - https://helm.edgeless.systems/stable/continuum-proxy-1.3.2.tgz
     version: 1.3.2
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.347676422Z"
+    created: "2026-05-07T07:37:16.651031211Z"
     description: A Helm chart for the Continuum Proxy.
     digest: 6c957bfa55c34ef2182de5b43b3664a4c764ba2190fb63fe5c22fa05808972a0
     name: continuum-proxy
@@ -56,7 +56,7 @@ entries:
     - https://helm.edgeless.systems/stable/continuum-proxy-1.3.1.tgz
     version: 1.3.1
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.347198656Z"
+    created: "2026-05-07T07:37:16.650803838Z"
     description: A Helm chart for the Continuum Proxy.
     digest: 278e06638e4ec1748165f86dbc6ebfa160926e14fd4712f076f21eaeab41a575
     name: continuum-proxy
@@ -65,7 +65,7 @@ entries:
     - https://helm.edgeless.systems/stable/continuum-proxy-1.3.0.tgz
     version: 1.3.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.346619391Z"
+    created: "2026-05-07T07:37:16.650568253Z"
     description: A Helm chart for the Continuum Proxy.
     digest: 9dd133eade4cc1383598928090032df105398bcd7a84be368429eb4b88479ccb
     name: continuum-proxy
@@ -74,7 +74,7 @@ entries:
     - https://helm.edgeless.systems/stable/continuum-proxy-1.2.2.tgz
     version: 1.2.2
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.346092975Z"
+    created: "2026-05-07T07:37:16.650310073Z"
     description: A Helm chart for the Continuum Proxy.
     digest: 667130615c407b9cd00c5dabbc05c54d8c79824988db59d0286684b689816084
     name: continuum-proxy
@@ -83,7 +83,7 @@ entries:
     - https://helm.edgeless.systems/stable/continuum-proxy-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.345584082Z"
+    created: "2026-05-07T07:37:16.650004402Z"
     description: A Helm chart for the Continuum Proxy.
     digest: 398da0174ca2ad3413cdb283327947c00aca6f91dbdb4c2cb94f6f54f88181e6
     name: continuum-proxy
@@ -92,7 +92,7 @@ entries:
     - https://helm.edgeless.systems/stable/continuum-proxy-1.0.0.tgz
     version: 1.0.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.345062054Z"
+    created: "2026-05-07T07:37:16.649758161Z"
     description: A Helm chart for the Continuum Proxy.
     digest: 4261454fe54ec1760d84e582e64038c4a0ebd5405b8b1cd3ee68f887a578909c
     name: continuum-proxy
@@ -107,7 +107,7 @@ entries:
           url: https://github.com/edgelesssys/edgelessdb/tree/main/charts
     apiVersion: v2
     appVersion: v0.3.2
-    created: "2026-04-24T09:14:49.354993029Z"
+    created: "2026-05-07T07:37:16.656012277Z"
     description: EdgelessDB is a MySQL-compatible database for confidential computing.
       It runs entirely inside a secure enclave and comes with advanced features for
       collaboration, recovery, and access control.
@@ -134,7 +134,7 @@ entries:
           url: https://github.com/edgelesssys/edgelessdb/tree/main/charts
     apiVersion: v2
     appVersion: v0.3.1
-    created: "2026-04-24T09:14:49.353212633Z"
+    created: "2026-05-07T07:37:16.655077771Z"
     description: EdgelessDB is a MySQL-compatible database for confidential computing.
       It runs entirely inside a secure enclave and comes with advanced features for
       collaboration, recovery, and access control.
@@ -161,7 +161,7 @@ entries:
           url: https://github.com/edgelesssys/edgelessdb/tree/main/charts
     apiVersion: v2
     appVersion: v0.3.0
-    created: "2026-04-24T09:14:49.352648125Z"
+    created: "2026-05-07T07:37:16.654407049Z"
     description: EdgelessDB is a MySQL-compatible database for confidential computing.
       It runs entirely inside a secure enclave and comes with advanced features for
       collaboration, recovery, and access control.
@@ -188,7 +188,7 @@ entries:
           url: https://github.com/edgelesssys/edgelessdb/tree/main/charts
     apiVersion: v2
     appVersion: v0.2.1
-    created: "2026-04-24T09:14:49.352078799Z"
+    created: "2026-05-07T07:37:16.653477757Z"
     description: EdgelessDB is a MySQL-compatible database for confidential computing.
       It runs entirely inside a secure enclave and comes with advanced features for
       collaboration, recovery, and access control.
@@ -215,7 +215,7 @@ entries:
           url: https://github.com/edgelesssys/edgelessdb/tree/main/charts
     apiVersion: v2
     appVersion: v0.2.0
-    created: "2026-04-24T09:14:49.351479757Z"
+    created: "2026-05-07T07:37:16.652927252Z"
     description: EdgelessDB is a MySQL-compatible database for confidential computing.
       It runs entirely inside a secure enclave and comes with advanced features for
       collaboration, recovery, and access control.
@@ -242,7 +242,7 @@ entries:
           url: https://github.com/edgelesssys/edgelessdb/tree/main/charts
     apiVersion: v2
     appVersion: v0.1.1
-    created: "2026-04-24T09:14:49.350839788Z"
+    created: "2026-05-07T07:37:16.65260108Z"
     description: EdgelessDB is a MySQL-compatible database for confidential computing.
       It runs entirely inside a secure enclave and comes with advanced features for
       collaboration, recovery, and access control.
@@ -270,7 +270,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v1.9.1
-    created: "2026-04-24T09:14:49.370712868Z"
+    created: "2026-05-07T07:37:16.665888208Z"
     description: The control plane for confidential computing.
     digest: c4318cee9a028743ef7d87e7f1cca89852de37a334ee6449adc20d5641b01853
     home: https://edgeless.systems
@@ -295,7 +295,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v1.9.0
-    created: "2026-04-24T09:14:49.370108756Z"
+    created: "2026-05-07T07:37:16.665322535Z"
     description: The control plane for confidential computing.
     digest: 4360c532e97c5d2b83f48b23e64ed248366d1c8fd667b9f2fa3a721598ca474d
     home: https://edgeless.systems
@@ -320,7 +320,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v1.8.0
-    created: "2026-04-24T09:14:49.36953931Z"
+    created: "2026-05-07T07:37:16.664771573Z"
     description: The control plane for confidential computing.
     digest: c688367ef5752fa5fb4938047e79f9d9355170270713106c7ed54a7c367c4c39
     home: https://edgeless.systems
@@ -345,7 +345,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v1.7.0
-    created: "2026-04-24T09:14:49.369105888Z"
+    created: "2026-05-07T07:37:16.664308134Z"
     description: The control plane for confidential computing.
     digest: 8e1b7d26815ed5cd4d9d80102d2fabdd8233829aca5ebbaa064ad1865ff943b1
     home: https://edgeless.systems
@@ -370,7 +370,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v1.6.0
-    created: "2026-04-24T09:14:49.368631769Z"
+    created: "2026-05-07T07:37:16.663778445Z"
     description: The control plane for confidential computing.
     digest: 9af242b33a3af5ab08846b1b8655145f4864b2236f3c6b4c005e7e58f7494347
     home: https://edgeless.systems
@@ -395,7 +395,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v1.5.2
-    created: "2026-04-24T09:14:49.368193669Z"
+    created: "2026-05-07T07:37:16.662495313Z"
     description: The control plane for confidential computing.
     digest: ab7edd4c7ccc996e57a324b3aa4ab5f442bc39e727d2e5b4a180d91e0a2c4c46
     home: https://edgeless.systems
@@ -420,7 +420,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v1.5.1
-    created: "2026-04-24T09:14:49.367708129Z"
+    created: "2026-05-07T07:37:16.661182498Z"
     description: The control plane for confidential computing.
     digest: 60fcf102bff3ab1864a523abe8d43988fdb906f679ebd62744d80049cb0f0dad
     home: https://edgeless.systems
@@ -445,7 +445,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v1.5.0
-    created: "2026-04-24T09:14:49.367211258Z"
+    created: "2026-05-07T07:37:16.660589403Z"
     description: The control plane for confidential computing.
     digest: ad69508294065300a4cbd0e7560679e61358958617197e27070d896b2a4e6659
     home: https://edgeless.systems
@@ -470,7 +470,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v1.4.1
-    created: "2026-04-24T09:14:49.366405469Z"
+    created: "2026-05-07T07:37:16.660126685Z"
     description: The control plane for confidential computing.
     digest: c3b39e7b0fd0590b2f18336819e91dee7e929aac7ac2fa7a0b3a203d70ce69b8
     home: https://edgeless.systems
@@ -495,7 +495,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v1.4.0
-    created: "2026-04-24T09:14:49.365355812Z"
+    created: "2026-05-07T07:37:16.659695054Z"
     description: The control plane for confidential computing.
     digest: 4b291153af4b0d11b53714cb0b7485e0a4c28dd24e88e7693829823519de458b
     home: https://edgeless.systems
@@ -520,7 +520,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v1.3.0
-    created: "2026-04-24T09:14:49.364425209Z"
+    created: "2026-05-07T07:37:16.659241189Z"
     description: The control plane for confidential computing.
     digest: fbd5e8d447844c9dad6c56efbc0b269d7ce245d31536f6161c4d9ef9ff8fac1b
     home: https://edgeless.systems
@@ -545,7 +545,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v1.2.0
-    created: "2026-04-24T09:14:49.363421829Z"
+    created: "2026-05-07T07:37:16.658776728Z"
     description: The control plane for confidential computing.
     digest: be4c1afb2986f2faac3e7371678a9ebdda94d9fde812afdd56f2d1dfe99aaf78
     home: https://edgeless.systems
@@ -570,7 +570,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v1.1.0
-    created: "2026-04-24T09:14:49.362550026Z"
+    created: "2026-05-07T07:37:16.658346569Z"
     description: The control plane for confidential computing.
     digest: 891925657879a729e77c52f2999cc6b5a2c91b7e1464347bb1e8e84ada6c9a84
     home: https://edgeless.systems
@@ -595,7 +595,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2026-04-24T09:14:49.361412505Z"
+    created: "2026-05-07T07:37:16.657869359Z"
     description: The control plane for confidential computing.
     digest: ea78f6421ef1771be49be464494577fd8cf9fffc1636085cf00d116c8d3be238
     home: https://edgeless.systems
@@ -620,7 +620,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v0.6.2
-    created: "2026-04-24T09:14:49.360525323Z"
+    created: "2026-05-07T07:37:16.657521544Z"
     description: The control plane for confidential computing.
     digest: 6689dbb25172a50d4a4dadfeea1fd8bdddd923f671d30fc50bac59eeb62be1e1
     home: https://edgeless.systems
@@ -645,7 +645,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v0.6.1
-    created: "2026-04-24T09:14:49.359603065Z"
+    created: "2026-05-07T07:37:16.657151166Z"
     description: The control plane for confidential computing.
     digest: 78c00870ed6edb0536bb6dbf4676658f06c9ad08841bb23b6ed35f6b3491dfd2
     home: https://edgeless.systems
@@ -670,7 +670,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v0.6.0
-    created: "2026-04-24T09:14:49.358744016Z"
+    created: "2026-05-07T07:37:16.6568097Z"
     description: The control plane for confidential computing.
     digest: 038ad67d625a231f3732727be9c5159fff6d32e1f1c8fee3fe94d52c1ef42ef0
     home: https://edgeless.systems
@@ -695,7 +695,7 @@ entries:
           url: https://github.com/edgelesssys/marblerun/tree/master/charts
     apiVersion: v2
     appVersion: v0.5.1
-    created: "2026-04-24T09:14:49.357895316Z"
+    created: "2026-05-07T07:37:16.656431249Z"
     description: The control plane for confidential computing.
     digest: b856bd57dcdbe0fcf493e54dd759931346ddc0293e0dba34abddd114a15cd503
     home: https://edgeless.systems
@@ -721,7 +721,7 @@ entries:
           url: https://github.com/edgelesssys/helm
     apiVersion: v2
     appVersion: v0.5.0
-    created: "2026-04-24T09:14:49.374834269Z"
+    created: "2026-05-07T07:37:16.668187468Z"
     description: The control plane for confidential computing.
     digest: 0435070d97b9a2b23181c42f81425e9f5672fa0f6ea8f31c3291bdfb4caef874
     home: https://edgeless.systems
@@ -746,7 +746,7 @@ entries:
           url: https://github.com/edgelesssys/helm
     apiVersion: v2
     appVersion: v0.4.0
-    created: "2026-04-24T09:14:49.37448214Z"
+    created: "2026-05-07T07:37:16.667861175Z"
     description: The control plane for confidential computing.
     digest: ab15beea7919ad055c6e328d046c1749c8a153a7406762c40009edb2f2c41347
     home: https://edgeless.systems
@@ -767,7 +767,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: v0.3.2
-    created: "2026-04-24T09:14:49.374169254Z"
+    created: "2026-05-07T07:37:16.667555414Z"
     description: Marblerun is the service mesh for the age of confidential computing.
     digest: ad069f7feeb7a65923098098e1cc7e935417a92da20f7df1e49d6169edef0e0b
     home: https://edgeless.systems
@@ -787,7 +787,7 @@ entries:
     version: 0.3.2
   - apiVersion: v2
     appVersion: v0.3.1
-    created: "2026-04-24T09:14:49.373876746Z"
+    created: "2026-05-07T07:37:16.667269022Z"
     description: Marblerun is the service mesh for the age of confidential computing.
     digest: c9e40677b945df7c7cb38b383c7f27ff46069ef7f7870cd3fc33261391632135
     home: https://edgeless.systems
@@ -807,7 +807,7 @@ entries:
     version: 0.3.1
   - apiVersion: v2
     appVersion: v0.3.0
-    created: "2026-04-24T09:14:49.373306587Z"
+    created: "2026-05-07T07:37:16.666979104Z"
     description: Marblerun is the service mesh for the age of confidential computing.
     digest: 727e86e25d1617c67ddb84e79b9234992e0f14dc2879d7eba93023e8d33501ba
     home: https://edgeless.systems
@@ -827,7 +827,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: v0.2.0
-    created: "2026-04-24T09:14:49.372498393Z"
+    created: "2026-05-07T07:37:16.66670419Z"
     description: Marblerun is the service mesh for the age of confidential computing.
     digest: a5b795e81ca420b3a1af53e62bb0d589c46317c8dc8e6b787e3bc9d8ab2017cc
     home: https://edgeless.systems
@@ -847,7 +847,7 @@ entries:
     version: 0.2.1
   - apiVersion: v2
     appVersion: v0.2.0
-    created: "2026-04-24T09:14:49.371917044Z"
+    created: "2026-05-07T07:37:16.666443376Z"
     description: Marblerun is the service mesh for the age of confidential computing.
     digest: c7112e3d950d5d17a17657cb77aec7242d2e05a5979bb59a24b120ff6a9319dd
     home: https://edgeless.systems
@@ -867,7 +867,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2026-04-24T09:14:49.371305298Z"
+    created: "2026-05-07T07:37:16.66617419Z"
     description: Marblerun is the service mesh for the age of confidential computing.
     digest: 933245bcfdb6718a99cf291e7c346fe77968705d921fcf3aedb0b1eed791a51a
     home: https://edgeless.systems
@@ -888,7 +888,7 @@ entries:
   marblerun-enterprise:
   - apiVersion: v2
     appVersion: eval-2
-    created: "2026-04-24T09:14:49.375311594Z"
+    created: "2026-05-07T07:37:16.668654102Z"
     description: The control plane for confidential computing.
     digest: 19efaf4e76f76c827284080b20aa0c5af984bdc912a74e38c2459039e0d637f5
     home: https://edgeless.systems
@@ -909,7 +909,16 @@ entries:
     version: 0.0.1
   privatemode-proxy:
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.384818417Z"
+    created: "2026-05-07T07:37:16.67934305Z"
+    description: A Helm chart for the Privatemode Proxy.
+    digest: 4e8b1c1894abb6a31ac4eedb62e77c6e40d45001a6aa10b18cb49ca57710c2c2
+    name: privatemode-proxy
+    type: application
+    urls:
+    - https://helm.edgeless.systems/stable/privatemode-proxy-1.40.0.tgz
+    version: 1.40.0
+  - apiVersion: v2
+    created: "2026-05-07T07:37:16.679094795Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: d25778144de860816a20010276642f0002b3c0290e1bb09a2f1a5008a32517e8
     name: privatemode-proxy
@@ -918,7 +927,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.39.1.tgz
     version: 1.39.1
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.384573368Z"
+    created: "2026-05-07T07:37:16.678865229Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: 353355ef97046c2931ea74f314857015650c5c4eb8758434c18343775e56b2e9
     name: privatemode-proxy
@@ -927,7 +936,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.39.0.tgz
     version: 1.39.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.384347154Z"
+    created: "2026-05-07T07:37:16.678634711Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: 23926c382f79594ee024af58fce4589fc6bd76f50328375eee1729b13a99c807
     name: privatemode-proxy
@@ -936,7 +945,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.38.0.tgz
     version: 1.38.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.384120019Z"
+    created: "2026-05-07T07:37:16.678383652Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: 1852678b6132834fa142a5e31f3aeae17cbc73c494e52956b398a1217075aac1
     name: privatemode-proxy
@@ -945,7 +954,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.37.0.tgz
     version: 1.37.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.383899846Z"
+    created: "2026-05-07T07:37:16.678085642Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: 08c3639ed656624a0e7fb82a4a6856ed40b2a10d0fad5535c3acb2367f7d4bdb
     name: privatemode-proxy
@@ -954,7 +963,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.36.0.tgz
     version: 1.36.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.383664826Z"
+    created: "2026-05-07T07:37:16.677167968Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: 6e1a1d9d6d603322b4e59218ea155e21ebdf469d5d282b9efe37c1c92e877289
     name: privatemode-proxy
@@ -963,7 +972,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.35.1.tgz
     version: 1.35.1
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.383447569Z"
+    created: "2026-05-07T07:37:16.676609094Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: b20fd74d804c51983fda414530c39c63860fed3667eff24209823e7459247a50
     name: privatemode-proxy
@@ -972,7 +981,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.35.0.tgz
     version: 1.35.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.383219732Z"
+    created: "2026-05-07T07:37:16.675790504Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: 598930899d9c230acbcda487d43587633d22a40d3a7bd01fcb5d1990c0f3c76a
     name: privatemode-proxy
@@ -981,7 +990,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.34.0.tgz
     version: 1.34.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.382954846Z"
+    created: "2026-05-07T07:37:16.675565023Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: f63f2eb199ce7d787ddf3433b43849738908ab4dce1286610448e7c659177610
     name: privatemode-proxy
@@ -990,7 +999,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.33.0.tgz
     version: 1.33.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.382681874Z"
+    created: "2026-05-07T07:37:16.675320965Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: 5243f61753e0d4b4db5e1de22db4cdccb24f73165f6c8f8fb4f3347a125aa1bf
     name: privatemode-proxy
@@ -999,7 +1008,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.32.0.tgz
     version: 1.32.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.382422559Z"
+    created: "2026-05-07T07:37:16.675079511Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: 60d2267d3251dd1eb5f14c4a46a19d256779fff412f45d5b0b0ae850498f54e6
     name: privatemode-proxy
@@ -1008,7 +1017,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.31.0.tgz
     version: 1.31.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.382152402Z"
+    created: "2026-05-07T07:37:16.674859228Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: 067c6590625426fe4535f0f1b4544bc1bcc43770b12d2358f074df7de441088f
     name: privatemode-proxy
@@ -1017,7 +1026,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.30.0.tgz
     version: 1.30.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.381815912Z"
+    created: "2026-05-07T07:37:16.674626067Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: dec5cbde749db07c9003b538b84e9104eff56b0f4007089b3497ddda77937dad
     name: privatemode-proxy
@@ -1026,7 +1035,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.29.0.tgz
     version: 1.29.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.381564391Z"
+    created: "2026-05-07T07:37:16.674398994Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: 0bb599145c3ea147bfbcd3328c5d31a81014ea540fcd7f995addd8a3229e9038
     name: privatemode-proxy
@@ -1035,7 +1044,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.28.0.tgz
     version: 1.28.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.381276391Z"
+    created: "2026-05-07T07:37:16.674158761Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: b9285cbdf8eba203b8369f82ec53d3503ef1cf3a127e957e80be4e1a3fcf8808
     name: privatemode-proxy
@@ -1044,7 +1053,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.27.0.tgz
     version: 1.27.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.380311784Z"
+    created: "2026-05-07T07:37:16.673936035Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: 52e900915a10b5a642669aff713e97d8a4b9c51f3d5efff9cce526cc0fb84231
     name: privatemode-proxy
@@ -1053,7 +1062,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.26.0.tgz
     version: 1.26.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.379703926Z"
+    created: "2026-05-07T07:37:16.673709414Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: 90acb5b6d5c5ab57efcf5d044ba7251a9286431559c42d966aee9becea5c3ac4
     name: privatemode-proxy
@@ -1062,7 +1071,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.25.0.tgz
     version: 1.25.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.378826659Z"
+    created: "2026-05-07T07:37:16.673455811Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: 6e4b5e676832c37f007685efdf6cb54e613e28fcec72c2114fcbdbc2cb30ab7c
     name: privatemode-proxy
@@ -1071,7 +1080,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.24.0.tgz
     version: 1.24.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.37857125Z"
+    created: "2026-05-07T07:37:16.673146995Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: c745a953891adb772dd234aaded567d4bebf94b5f0752a61350d43bbf4e41d25
     name: privatemode-proxy
@@ -1080,7 +1089,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.23.0.tgz
     version: 1.23.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.378309279Z"
+    created: "2026-05-07T07:37:16.672900914Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: be7a11c55772e9981080247f3f396cbdd43135e63664b0ededaf69c29dffe5e8
     name: privatemode-proxy
@@ -1089,7 +1098,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.22.0.tgz
     version: 1.22.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.378036759Z"
+    created: "2026-05-07T07:37:16.672681092Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: 079055969ab9f793d72347b616126c52b662a3c6f2aa4d5625365aba53b372c0
     name: privatemode-proxy
@@ -1098,7 +1107,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.21.0.tgz
     version: 1.21.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.377724815Z"
+    created: "2026-05-07T07:37:16.672453378Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: 895fad32c8bc9a53bf5bbee8293437e13ec54cda48aa21cf83ea3e177c5759cb
     name: privatemode-proxy
@@ -1107,7 +1116,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.20.0.tgz
     version: 1.20.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.377210411Z"
+    created: "2026-05-07T07:37:16.672174838Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: c7c118528adab0d08fb8238622bdf6bda21d86cb5fe3b7a8dc5f1d5ebe199f9b
     name: privatemode-proxy
@@ -1116,7 +1125,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.19.0.tgz
     version: 1.19.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.376980681Z"
+    created: "2026-05-07T07:37:16.671941636Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: 5b512128cb8c809b352e6422feacec853f9edad2385b2639ff21cd25211e4a0f
     name: privatemode-proxy
@@ -1125,7 +1134,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.18.0.tgz
     version: 1.18.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.376725352Z"
+    created: "2026-05-07T07:37:16.671701995Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: c10b1175d803381063daaa25f609653bf6752ba687ae95c0352a5772a4a41256
     name: privatemode-proxy
@@ -1134,7 +1143,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.17.0.tgz
     version: 1.17.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.376485934Z"
+    created: "2026-05-07T07:37:16.671462643Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: 4608f70284f7c17d8a01223737ec32ef3f5d0179e1082b4737ce51826bffa550
     name: privatemode-proxy
@@ -1143,7 +1152,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.16.0.tgz
     version: 1.16.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.376261994Z"
+    created: "2026-05-07T07:37:16.67116222Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: 36750fb1a54c4ca8024ef43447828f80445927a07854c3ad8c8e8b2076b0f729
     name: privatemode-proxy
@@ -1152,7 +1161,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.15.0.tgz
     version: 1.15.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.376041371Z"
+    created: "2026-05-07T07:37:16.670408349Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: 725ce9d9fda6fc097a4aa463556dc7921842ca7dbfd1ce85443bf699c39b9706
     name: privatemode-proxy
@@ -1161,7 +1170,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.14.0.tgz
     version: 1.14.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.375796432Z"
+    created: "2026-05-07T07:37:16.669871418Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: 17952a225e7b527c3e49091ccc0daac863c0de26b4ccd0a7d16c79d1bfcdb50a
     name: privatemode-proxy
@@ -1170,7 +1179,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.13.0.tgz
     version: 1.13.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.375569326Z"
+    created: "2026-05-07T07:37:16.669386026Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: f4bb61121f13440498b09db30f95584c24bc18a1dfc2a48aeb59d897cc224d31
     name: privatemode-proxy
@@ -1179,7 +1188,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.11.0.tgz
     version: 1.11.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.385290341Z"
+    created: "2026-05-07T07:37:16.679821241Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: 2df158c0d98a23a45afbadda0881f1f2512cb5ffce3e0b8dffadfe007f217d3c
     name: privatemode-proxy
@@ -1188,7 +1197,7 @@ entries:
     - https://helm.edgeless.systems/stable/privatemode-proxy-1.8.0.tgz
     version: 1.8.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.385067604Z"
+    created: "2026-05-07T07:37:16.679594699Z"
     description: A Helm chart for the Privatemode Proxy.
     digest: 27f71311840883b139ced907e30a8aa267b01154547f53d2d887679fa11d7704
     name: privatemode-proxy
@@ -1198,7 +1207,7 @@ entries:
     version: 1.6.0
   s3proxy:
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.390842473Z"
+    created: "2026-05-07T07:37:16.685118939Z"
     description: Helm chart to deploy s3proxy.
     digest: 6ae63a9463d4bc5b5e904de650599be8cb70f745167af2a9b7230df4733145a6
     name: s3proxy
@@ -1207,7 +1216,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.24.0.tgz
     version: 2.24.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.390707349Z"
+    created: "2026-05-07T07:37:16.684987571Z"
     description: Helm chart to deploy s3proxy.
     digest: b8b479494f8fa09193443bf360a9dcfb5cdbe4caef00dd3384c33aa89d5ebf70
     name: s3proxy
@@ -1216,7 +1225,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.23.1.tgz
     version: 2.23.1
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.390553581Z"
+    created: "2026-05-07T07:37:16.6848549Z"
     description: Helm chart to deploy s3proxy.
     digest: af77bf6461aba469823dddcebd2c4bfa62b874092599b9f3b06135d62432ec0d
     name: s3proxy
@@ -1225,7 +1234,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.23.0.tgz
     version: 2.23.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.390421224Z"
+    created: "2026-05-07T07:37:16.684718915Z"
     description: Helm chart to deploy s3proxy.
     digest: 542a0bf4f0f70ad065b23df6e70572f68526679af2b79251fb8f1850148ba30a
     name: s3proxy
@@ -1234,7 +1243,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.22.0.tgz
     version: 2.22.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.390292713Z"
+    created: "2026-05-07T07:37:16.684584693Z"
     description: Helm chart to deploy s3proxy.
     digest: be95a016d6c2e936f8bc56c0c9682be219175d8995bf77460e41cb0745aec3ca
     name: s3proxy
@@ -1243,7 +1252,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.21.1.tgz
     version: 2.21.1
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.390159854Z"
+    created: "2026-05-07T07:37:16.684437531Z"
     description: Helm chart to deploy s3proxy.
     digest: 7b6c6eb6243555a381574f4ada7df802356a004f0bd3db47cff0cadc22dbe05e
     name: s3proxy
@@ -1252,7 +1261,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.21.0.tgz
     version: 2.21.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.390026955Z"
+    created: "2026-05-07T07:37:16.684202546Z"
     description: Helm chart to deploy s3proxy.
     digest: 4075e75960e5d5cbcbf6890c48dfa6654937ec78e3681affa77fa3bff2b177f7
     name: s3proxy
@@ -1261,7 +1270,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.20.1.tgz
     version: 2.20.1
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.389870902Z"
+    created: "2026-05-07T07:37:16.683642797Z"
     description: Helm chart to deploy s3proxy.
     digest: a8e768e27d22afca40b69c626c9258fbe92ab01759bfad914d83302aa28bf397
     name: s3proxy
@@ -1270,7 +1279,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.20.0.tgz
     version: 2.20.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.389717766Z"
+    created: "2026-05-07T07:37:16.683351588Z"
     description: Helm chart to deploy s3proxy.
     digest: c9468052a591fc1bb466001a1dcfaf80f545ebffb524c0e0b7582066037b2f87
     name: s3proxy
@@ -1279,7 +1288,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.19.3.tgz
     version: 2.19.3
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.389570049Z"
+    created: "2026-05-07T07:37:16.683058045Z"
     description: Helm chart to deploy s3proxy.
     digest: 6fc962db45dbf96c3e1cc04ff05f412461763de937e328e150cfa80c4a239493
     name: s3proxy
@@ -1288,7 +1297,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.19.2.tgz
     version: 2.19.2
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.389436288Z"
+    created: "2026-05-07T07:37:16.682759174Z"
     description: Helm chart to deploy s3proxy.
     digest: a1e2c05c04ae0eadd352eaaf977aaa7790490bc37b5d7e0094d4a230d04bf444
     name: s3proxy
@@ -1297,7 +1306,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.19.1.tgz
     version: 2.19.1
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.389303249Z"
+    created: "2026-05-07T07:37:16.682455225Z"
     description: Helm chart to deploy s3proxy.
     digest: 619b49eb3a2eccf1d3694592abf0198b484fa27354d451fc9dd69527ff7e166e
     name: s3proxy
@@ -1306,7 +1315,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.19.0.tgz
     version: 2.19.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.389159099Z"
+    created: "2026-05-07T07:37:16.681832426Z"
     description: Helm chart to deploy s3proxy.
     digest: bd2343963f2011866199108532379f649f8b3ba72a60a5d327bb8498f55d01eb
     name: s3proxy
@@ -1315,7 +1324,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.18.0.tgz
     version: 2.18.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.389018085Z"
+    created: "2026-05-07T07:37:16.68170293Z"
     description: Helm chart to deploy s3proxy.
     digest: ee19b555cd4cbbae6b1afc55c7e46a28897a0e762e1c0177edeb6f380ddb335e
     name: s3proxy
@@ -1324,7 +1333,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.17.0.tgz
     version: 2.17.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.388840031Z"
+    created: "2026-05-07T07:37:16.681581787Z"
     description: Helm chart to deploy s3proxy.
     digest: 306f30e3c68c85d3ac1f09d1839f3cac240e29b4a9e92172066f44aed97fbb3a
     name: s3proxy
@@ -1333,7 +1342,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.16.4.tgz
     version: 2.16.4
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.388681364Z"
+    created: "2026-05-07T07:37:16.681452092Z"
     description: Helm chart to deploy s3proxy.
     digest: a5d9d86f5b4352872bf5bb66c56f31026fcd1286b2a2fcecd6636f95c7881c74
     name: s3proxy
@@ -1342,7 +1351,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.16.3.tgz
     version: 2.16.3
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.388529319Z"
+    created: "2026-05-07T07:37:16.681310318Z"
     description: Helm chart to deploy s3proxy.
     digest: 80a8447ebe34e65f7d2e9c991899b0483e1a4c71badf2802a2758abbec7757a7
     name: s3proxy
@@ -1351,7 +1360,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.16.2.tgz
     version: 2.16.2
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.38831105Z"
+    created: "2026-05-07T07:37:16.681166311Z"
     description: Helm chart to deploy s3proxy.
     digest: dbfcc6a7cfa48393a2116934653e5ac4b803925e2ec343be971666f39b1ca17b
     name: s3proxy
@@ -1360,7 +1369,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.16.1.tgz
     version: 2.16.1
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.387757794Z"
+    created: "2026-05-07T07:37:16.68103993Z"
     description: Helm chart to deploy s3proxy.
     digest: 1953182789b575258e78356340936a313db8cc4d15e6d4cba3b87e24ad94d1f2
     name: s3proxy
@@ -1369,7 +1378,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.16.0.tgz
     version: 2.16.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.387470496Z"
+    created: "2026-05-07T07:37:16.68091444Z"
     description: Helm chart to deploy s3proxy.
     digest: bcf6761f3a50d3bd8f3fb0324c0a1da290d32f74b18135f3b56867262658bc57
     name: s3proxy
@@ -1378,7 +1387,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.15.1.tgz
     version: 2.15.1
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.387154293Z"
+    created: "2026-05-07T07:37:16.680777884Z"
     description: Helm chart to deploy s3proxy.
     digest: e6dfdbe4e6ab00f83c471209dc6d649b73eaed3bbf4402c3ef78fa9586ef5e4e
     name: s3proxy
@@ -1387,7 +1396,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.15.0.tgz
     version: 2.15.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.386830797Z"
+    created: "2026-05-07T07:37:16.680650853Z"
     description: Helm chart to deploy s3proxy.
     digest: 7e73374f7f1dae224f4e35fbc7bded5fc7aaa4ecb20af2b4822376c0c17a864e
     name: s3proxy
@@ -1396,7 +1405,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.14.3.tgz
     version: 2.14.3
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.386566973Z"
+    created: "2026-05-07T07:37:16.680523941Z"
     description: Helm chart to deploy s3proxy.
     digest: 7081dc5aff40105e16b37e50c7f2e013cbc5f2e29a0525791f77e6bf78a876b2
     name: s3proxy
@@ -1405,7 +1414,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.14.2.tgz
     version: 2.14.2
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.386292298Z"
+    created: "2026-05-07T07:37:16.680395828Z"
     description: Helm chart to deploy s3proxy.
     digest: a85de0e422fb6629a0dc111f5da49dd467039e2814fccb83cc6165e02ff01f2b
     name: s3proxy
@@ -1414,7 +1423,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.14.1.tgz
     version: 2.14.1
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.385712943Z"
+    created: "2026-05-07T07:37:16.68025108Z"
     description: Helm chart to deploy s3proxy.
     digest: 3c6a90807312bae71d8545c201786ef039240f92ca5a35343123051dc825be84
     name: s3proxy
@@ -1423,7 +1432,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.14.0.tgz
     version: 2.14.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.385570436Z"
+    created: "2026-05-07T07:37:16.680102445Z"
     description: Helm chart to deploy s3proxy.
     digest: 221a7f22d5900de160f1c23a1b76b09e07237ed8cffd10f360db0448e2526dff
     name: s3proxy
@@ -1432,7 +1441,7 @@ entries:
     - https://helm.edgeless.systems/stable/s3proxy-2.13.0.tgz
     version: 2.13.0
   - apiVersion: v2
-    created: "2026-04-24T09:14:49.385432538Z"
+    created: "2026-05-07T07:37:16.679965429Z"
     description: Helm chart to deploy s3proxy.
     digest: 404d62fa523ed771f9cfe4b0ad2cc2115d933e295292fd2bc0fd35861576b51e
     name: s3proxy
@@ -1440,4 +1449,4 @@ entries:
     urls:
     - https://helm.edgeless.systems/stable/s3proxy-2.12.0.tgz
     version: 2.12.0
-generated: "2026-04-24T09:14:49.344335392Z"
+generated: "2026-05-07T07:37:16.649358147Z"
